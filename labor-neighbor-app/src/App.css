@@ -1,3 +1,6 @@
+@import url(Styling/header.css);
+@import url(Styling/footer.css);
+
 .App {
   text-align: center;
 }

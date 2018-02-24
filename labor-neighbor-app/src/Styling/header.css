@@ -1,0 +1,14 @@
+.component_header{
+	background-color: green;
+	height: 50px;
+	clear: both;
+}
+
+.component_header_img{
+	float: left;
+}
+
+.component_header_text{
+	float: right;
+	margin-right: 15px;
+}

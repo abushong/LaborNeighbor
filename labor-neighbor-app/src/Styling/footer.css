@@ -1,0 +1,8 @@
+.component_footer{
+	background-color: red;
+	height: 50px;
+}
+
+.component_footer_text{
+	margin: 15px;
+}
