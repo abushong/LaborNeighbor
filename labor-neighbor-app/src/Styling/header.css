@@ -1,14 +1,19 @@
 .component_header{
 	background-color: green;
-	height: 50px;
-	clear: both;
+	height: 100px;
+	box-shadow: 0 1px 5px gray;
+	position: relative;
 }
 
 .component_header_img{
 	float: left;
+	height: 40px;
+	width: 70px;
+	margin: 30px;
 }
 
 .component_header_text{
 	float: right;
-	margin-right: 15px;
+	margin: 35px 15px 0 0;
+	font-size: 1.4em;
 }
