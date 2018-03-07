@@ -1,0 +1,7 @@
+.component_signupsheet{
+	width: 500px;
+	height: 450px;
+	background-color: gray;
+	border-radius: 4px;
+	border: solid 1px lightgray;
+}
