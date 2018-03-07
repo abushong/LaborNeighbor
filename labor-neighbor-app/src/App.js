@@ -3,6 +3,7 @@ import './App.css';
 import Header from "Components/Header.js";
 import Footer from "Components/Footer.js";
 import Body from "Components/Body.js";
+import SignUpSheet from "Components/SignUpSheet.js";
 
 class App extends Component {
   render() {
@@ -10,6 +11,7 @@ class App extends Component {
       <div className="App">
         <Header />
         <Body />
+        <SignUpSheet />
         <Footer />
       </div>
     );
