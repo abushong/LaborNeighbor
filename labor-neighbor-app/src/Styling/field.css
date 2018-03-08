@@ -1,3 +1,15 @@
 .component_field{
-	
+	margin: 25px 10px 10px;
+}
+
+.component_field_box{
+	width: 100%;
+	border-radius: 4px;
+	border: none;
+	box-sizing: border-box;
+	padding: 10px;
+}
+.component_field_box:focus{
+	outline: none;
+	background-color: aliceblue;
 }

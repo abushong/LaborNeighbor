@@ -5,7 +5,7 @@ export default class Field extends Component{
 
 		return(
 			<div className="component_field">
-				<input type="text" placeholder={this.props.name} >
+				<input className="component_field_box" type="text" placeholder={this.props.name} />
 			</div>
 		);
 	}
