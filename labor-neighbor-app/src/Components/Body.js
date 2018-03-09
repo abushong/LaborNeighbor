@@ -1,5 +1,12 @@
 import React, { Component } from 'react';
 import icon from './dingus.png'
+import img1 from './Img/signup.png'
+import img2 from './Img/fast.png'
+import img3 from './Img/money.png'
+import img4 from './Img/map.png'
+import img5 from './Img/clock.png'
+import img6 from './Img/screwdriver.png'
+
 
 export default class Body extends Component{
 	render(){
@@ -18,14 +25,26 @@ export default class Body extends Component{
 					<h2>Find Small Jobs Faster. Smarter. Easier.</h2>
 						<p>A world of small jobs and workers surround you. We’ll help you find them.</p>
 						<ul>
-							<li>Free Signup</li>
-							<li>Fast Connection</li>
-							<li>Immediate Payment</li>
+							<li>
+								<img className="component_body_about_icons_single" src={img1} alt="work icon" />
+
+								Free Signup</li>
+							<li>
+								<img className="component_body_about_icons_single" src={img2} alt="work icon" />
+								Fast Connection</li>
+							<li>
+								<img className="component_body_about_icons_single" src={img3} alt="work icon" />
+								Immediate Payment</li>
 						</ul>
 						<ul>
-							<li>Local Parameters</li>
-							<li>On Your Own Time</li>
-							<li>Short Term Work</li>
+							<li>
+								<img className="component_body_about_icons_single" src={img4} alt="work icon" />
+								Local Parameters</li>
+							<li><img className="component_body_about_icons_single" src={img5} alt="work icon" />
+							On Your Own Time</li>
+							<li>
+								<img className="component_body_about_icons_single" src={img6} alt="work icon" />
+								Short Term Work</li>
 						</ul>
 				</div>
 			</div>
