@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import icon from './dingus.png'
-import img1 from './Img/signup.png'
-import img2 from './Img/fast.png'
-import img3 from './Img/money.png'
-import img4 from './Img/map.png'
-import img5 from './Img/clock.png'
-import img6 from './Img/screwdriver.png'
+import img1 from './signup.png'
+import img2 from './fast.png'
+import img3 from './money.png'
+import img4 from './map.png'
+import img5 from './clock.png'
+import img6 from './screwdriver.png'
 
 
 export default class Body extends Component{
