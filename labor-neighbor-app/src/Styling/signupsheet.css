@@ -1,12 +1,20 @@
 .component_signupsheet{
 	max-width: 500px;
-	background-color: gray;
-	border-radius: 4px;
+	border-radius: 5px;
 	border: solid 1px lightgray;
+	padding-bottom: 10px;
 }
 
-.component_signupsheet_logo{
+.component_signupsheet_header{
 	width: 100%;
+}
+
+.component_signupsheet_loginbutton{
 	height: 60px;
-	background-color: darkgray;
+	background-color: red;
+}
+
+.component_signupsheet_signupbutton{
+	height: 60px;
+	background-color: green;
 }
