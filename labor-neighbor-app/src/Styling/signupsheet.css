@@ -1,7 +1,7 @@
 .component_signupsheet{
 	max-width: 500px;
 	border-radius: 5px;
-	border: solid 1px lightgray;
+	border-top: none;
 	padding-bottom: 10px;
 }
 
@@ -9,12 +9,39 @@
 	width: 100%;
 }
 
+.component_signupsheet_body{
+	border: solid 1px lightgray;
+	width: 100%;
+	box-sizing: border-box;
+}
+
 .component_signupsheet_loginbutton{
 	height: 60px;
-	background-color: red;
+	width: 50%;
+	display: inline-block;
+	border-radius: 15px 15px 0 0;
+	border: solid 1px lightgray;
+	box-sizing: border-box;
+	border-right: none;
+	border-bottom: none;
+	text-align: center;
+	background-color: rgb(163,199,133);
+	cursor: pointer;
 }
 
 .component_signupsheet_signupbutton{
 	height: 60px;
-	background-color: green;
+	width: 50%;
+	display: inline-block;
+	border-radius: 15px 15px 0 0;
+	border: solid 1px lightgray;
+	box-sizing: border-box;
+	border-left: none;
+	border-bottom: none;
+	text-align: center;
+	cursor: pointer;
+}
+
+.component_signupsheet_selectedtab{
+	background-color: #f3ffdd;
 }
