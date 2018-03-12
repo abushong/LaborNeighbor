@@ -1,0 +1,21 @@
+.component_button_container{
+	margin: 0 auto;
+	width: 150px;
+}
+.component_button{
+	outline: none;
+	padding: 10px 25px;
+	width: 150px;
+	margin-bottom: 20px;
+	border-radius: 4px;
+	font-size: 16px;
+	border: solid 1px lightgray;
+}
+.component_button:hover{
+	background-color: rgb(163,199,133);
+	cursor: pointer;
+	color: white;
+}
+.component_button:active{
+	background-color: #77b245;
+}
