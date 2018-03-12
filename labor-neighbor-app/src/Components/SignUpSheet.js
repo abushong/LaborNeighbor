@@ -45,10 +45,10 @@ export default class SignUpSheet extends Component{
 			<div className="component_signupsheet">
 				<div className="component_signupsheet_header" >
 					<div onClick={this.isLogin} className="component_signupsheet_loginbutton">
-					login
+					Login
 					</div>
 					<div onClick={this.isSignup} className="component_signupsheet_signupbutton">
-					signup
+					Sign Up
 					</div>
 				</div>
 				{this.state.body}

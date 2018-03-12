@@ -27,6 +27,8 @@
 	text-align: center;
 	background-color: rgb(163,199,133);
 	cursor: pointer;
+	vertical-align: middle;
+	line-height: 60px;
 }
 
 .component_signupsheet_signupbutton{
@@ -40,6 +42,8 @@
 	border-bottom: none;
 	text-align: center;
 	cursor: pointer;
+	vertical-align: middle;
+	line-height: 60px;
 }
 
 .component_signupsheet_selectedtab{

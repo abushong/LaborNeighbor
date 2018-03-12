@@ -13,6 +13,9 @@ class App extends Component {
         <Body />
         <SignUpSheet />
         <Footer />
+        <main>
+          {this.props.children}
+        </main>
       </div>
     );
   }
