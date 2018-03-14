@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import Routes from './routes.js';
 import Header from "Components/Header.js";
 import Footer from "Components/Footer.js";
 import Body from "Components/Body.js";
@@ -10,8 +11,7 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
-        <Body / >
-        <SignUpSheet />
+        <Routes />
         <Footer />
         <main>
           {this.props.children}

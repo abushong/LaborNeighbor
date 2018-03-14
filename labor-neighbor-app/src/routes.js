@@ -1,12 +1,17 @@
-import React from 'react';
-import { Route, IndexRoute } from 'react-router';
+import React, { Component } from 'react';
+import { Route, Switch } from 'react-router-dom';
 import SignUpSheet from "Components/SignUpSheet.js";
+import Body from "Components/Body.js";
 
 import App from "./App.js";
 
-export default(
-	<Route path="/" component={App}>
-		<Route exact path="/" component={App} />
-		<Route path="./Components/SignUpSheet.js" component={SignUpSheet} />
-	</Route>
-);
+export default class Routes extends Component{
+	render() {
+    	return (
+			<Switch>
+				<Route exact path="/" component={Body} />
+				<Route path="/signup" component={SignUpSheet} />
+			</Switch>
+		);
+	}
+}
