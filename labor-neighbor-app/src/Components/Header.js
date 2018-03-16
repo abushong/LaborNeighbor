@@ -11,12 +11,13 @@ export default class Header extends Component{
 				<Link to="/">
 					<img className="component_header_img" src={logo} alt="logo" />
 				</Link>
-				<p className="component_header_text">Contact</p>
-				<p className="component_header_text">About</p>
+				<p className="component_header_text_left">About</p>
+				<p className="component_header_text_left">Contact</p>
+				<p className="component_header_text_left">Job Board</p>
 				<Link to="/signup">
-					<p className="component_header_text">Signup/Log In</p>
+					<p className="component_header_text_right">Log In/Signup</p>
 				</Link>
-				<p className="component_header_text">Post a Job</p>
+			
 
 			</header>
 		);
