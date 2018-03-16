@@ -1,0 +1,14 @@
+.component_job{
+	border: 1px solid black;
+	width: 600px;
+	position: relative;
+	overflow: auto;
+}
+
+.component_job_title{
+	float: left;
+}
+
+.component_job_details{
+	float: right;
+}
