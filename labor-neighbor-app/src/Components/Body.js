@@ -40,13 +40,20 @@ export default class Body extends Component{
 							<li>
 								<img className="component_body_about_icons_single" src={img4} alt="work icon" />
 								Local Parameters</li>
-							<li><img className="component_body_about_icons_single" src={img4} alt="work icon" />
+							<li><img className="component_body_about_icons_single" src={img5} alt="work icon" />
 							On Your Own Time</li>
 							<li>
 								<img className="component_body_about_icons_single" src={img6} alt="work icon" />
 								Short Term Work</li>
 						</ul>
 				</div>
+				<div className="component_body_tasks">
+					<h2>Tasks</h2>
+				</div>
+				<div className="component_body_whowehelp">
+					<h2>Who We Help</h2>
+				</div>
+
 			</div>
 		);
 	}

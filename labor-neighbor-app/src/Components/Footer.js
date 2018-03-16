@@ -4,7 +4,7 @@ export default class Footer extends Component{
 	render(){
 		return(
 			<footer className="component_footer">
-				<p className="component_footer_text">Footer Text 1</p>
+				<h4 className="component_footer_text">Find Small Jobs. Fast, smarter, easier.</h4>
 			</footer>
 		);
 	}
