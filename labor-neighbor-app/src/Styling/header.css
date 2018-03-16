@@ -5,6 +5,14 @@
 	position: relative;
 }
 
+.component_header a, a:visited{
+	text-decoration: none;
+	color: black;
+}
+.component_header a:hover{
+	color: azure;
+}
+
 .component_header_img{
 	float: left;
 	height: 40px;
