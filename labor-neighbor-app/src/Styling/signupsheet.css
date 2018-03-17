@@ -29,6 +29,7 @@
 	cursor: pointer;
 	vertical-align: middle;
 	line-height: 60px;
+	background-color: white;
 }
 
 .component_signupsheet_signupbutton{
@@ -44,8 +45,13 @@
 	cursor: pointer;
 	vertical-align: middle;
 	line-height: 60px;
+	background-color: white;
 }
 
-.component_signupsheet_selectedtab{
-	background-color: #f3ffdd;
+.component_signupsheet_selected{
+	background-color: rgb(163,199,133);
+}
+
+.component_signupsheet_nonselected{
+	background-color: white;
 }

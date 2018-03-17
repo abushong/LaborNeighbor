@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import filler from './dingus.png';
 
 export default class Job extends Component{
 
@@ -11,6 +12,10 @@ export default class Job extends Component{
 					<p>Laborers:</p>
 					<p>Description:</p>
 					<p>Price</p>
+				</div>
+				<img className="component_job_pic" src={filler} alt="profile picture" />
+				<div className="component_job_description">
+					Description
 				</div>
 			</div>
 		);

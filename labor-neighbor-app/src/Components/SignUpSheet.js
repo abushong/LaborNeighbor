@@ -11,7 +11,9 @@ export default class SignUpSheet extends Component{
 				<Field name="email" />
 				<Field name="password" />
 				<Button type="login" text="Log In"/>
-			</div>
+			</div>,
+			login: "component_signupsheet_loginbutton component_signupsheet_selected",
+			signup: "component_signupsheet_signupbutton"
 		}
 	}
 
@@ -24,17 +26,22 @@ export default class SignUpSheet extends Component{
 				<Field name="email" />
 				<Field name="password" />
 				<Button type="signup" text="Sign Up"/>
-			</div>
+			</div>,
+			login: "component_signupsheet_loginbutton",
+			signup: "component_signupsheet_signupbutton component_signupsheet_selected"
 		 });	
 	}
 
 	isLogin = () => {
-		this.setState({body:
+		this.setState({
+			body:
 			<div className="component_signupsheet_body">
 				<Field name="email" />
 				<Field name="password" />
 				<Button type="login" text="Log In"/>
-			</div>
+			</div>,
+			login: "component_signupsheet_loginbutton component_signupsheet_selected",
+			signup: "component_signupsheet_signupbutton"
 		});
 	}
 
@@ -44,10 +51,10 @@ export default class SignUpSheet extends Component{
 		return(
 			<div className="component_signupsheet">
 				<div className="component_signupsheet_header" >
-					<div onClick={this.isLogin} className="component_signupsheet_loginbutton">
+					<div onClick={this.isLogin} className={this.state.login}>
 					Login
 					</div>
-					<div onClick={this.isSignup} className="component_signupsheet_signupbutton">
+					<div onClick={this.isSignup} className={this.state.signup}>
 					Sign Up
 					</div>
 				</div>

@@ -3,12 +3,24 @@
 	width: 600px;
 	position: relative;
 	overflow: auto;
+	border-radius: 4px;
 }
 
 .component_job_title{
 	float: left;
+	margin-left: 10px;
 }
 
 .component_job_details{
 	float: right;
+	margin-right: 10px;
+}
+
+.component_job_pic{
+	margin: 50px 0 0 -75px;
+	width: 75px;
+}
+
+.component_job_description{
+	margin: 5px 0 15px 5px;
 }
