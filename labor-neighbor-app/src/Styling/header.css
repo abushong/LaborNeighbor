@@ -20,8 +20,14 @@
 	margin: 30px;
 }
 
-.component_header_text{
-	float: right;
+.component_header_text_left{
+	display: inline-block;
+	margin: 35px 15px 0 0;
+	font-size: 1.4em;
+}
+
+.component_header_text_right{
+	float:right;
 	margin: 35px 15px 0 0;
 	font-size: 1.4em;
 }

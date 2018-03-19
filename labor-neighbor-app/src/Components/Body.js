@@ -14,12 +14,6 @@ export default class Body extends Component{
 			<div className="component_body">
 				<div className="component_body_intro">
 					<h1> Welcome to Labor Neighbor </h1>
-					<div className="component_body_intro_icons">
-						<img className="component_body_intro_icons_single" src={icon} alt="work icon" />
-						<img className="component_body_intro_icons_single" src={icon} alt="work icon" />
-						<img className="component_body_intro_icons_single" src={icon} alt="work icon" />
-						<img className="component_body_intro_icons_single" src={icon} alt="work icon" />
-					</div>
 				</div>
 				<div className="component_body_about">
 					<h2>Find Small Jobs Faster. Smarter. Easier.</h2>
@@ -40,13 +34,45 @@ export default class Body extends Component{
 							<li>
 								<img className="component_body_about_icons_single" src={img4} alt="work icon" />
 								Local Parameters</li>
-							<li><img className="component_body_about_icons_single" src={img4} alt="work icon" />
+							<li><img className="component_body_about_icons_single" src={img5} alt="work icon" />
 							On Your Own Time</li>
 							<li>
 								<img className="component_body_about_icons_single" src={img6} alt="work icon" />
 								Short Term Work</li>
 						</ul>
 				</div>
+				<div className="component_body_tasks">
+					<h2>Tasks</h2>
+					<ul>
+						<li>Task 1</li>
+						<li>Task 2</li>
+						<li>Task 3</li>
+					</ul>
+					<ul>
+						<li>Task 4</li>
+						<li>Task 5</li>
+						<li>Task 6</li>
+					</ul>
+					<ul>
+						<li>Task 7</li>
+						<li>Task 8</li>
+						<li>Task 9</li>
+					</ul>
+					<ul>
+						<li>Task 10</li>
+						<li>Task 11</li>
+						<li>Task 12</li>
+					</ul>
+					<ul>
+						<li>Task 13</li>
+						<li>Task 14</li>
+						<li>Task 15</li>
+					</ul>
+				</div>
+				<div className="component_body_whowehelp">
+					<h2>Who We Help</h2>
+				</div>
+
 			</div>
 		);
 	}

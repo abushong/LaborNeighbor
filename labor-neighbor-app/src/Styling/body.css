@@ -3,8 +3,27 @@
 	text-align: center;
 }
 
-.component_body_intro_icons{
-	
+.component_body_intro{
+ border-top: 5px solid black;
+ width:100%;
+}
+
+.component_body_about{
+	height:310px;
+	width:100%;
+	border-bottom: 5px solid black;
+}
+
+.component_body_tasks{
+	height:250px;
+	width:100%;
+	border-bottom: 5px solid black;
+}
+
+.component_body_whowehelp{
+	height:200px;
+	width:100%;
+	border-bottom: 5px solid black;
 }
 
 .component_body_intro_icons_single{
@@ -16,15 +35,26 @@
 .component_body_about_icons_single{
 	display:inline-block;
 	padding: 5px;
-	width: 50px;
-	height: 50px;
+	width: 30px;
+	height: 30px;
 }
 
-ul{
+.component_body_about ul{
 	list-style: none;
 	display:inline-block;
+	padding-top:0px;
 }
 
-li{
-	padding:10px;
+.component_body_about li{
+	font-size:14px;
+	padding-top:5px;
+}
+
+.component_body_tasks li{
+	padding:5px;
+}
+
+.component_body_tasks ul{
+	list-style: none;
+	display:inline-block;
 }
