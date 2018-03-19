@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import filler from './dingus.png';
+var FontAwesome = require('react-fontawesome');
 
 export default class Job extends Component{
 
@@ -14,8 +15,12 @@ export default class Job extends Component{
 					<p>Price</p>
 				</div>
 				<img className="component_job_pic" src={filler} alt="profile picture" />
+				<div className="component_job_user">
+					<h4>Username</h4>
+				</div>
 				<div className="component_job_description">
-					Distance to job
+					<p>Distance to job</p>
+					<FontAwesome name='envelope' className="component_job_envelope" size="2x"/>
 				</div>
 			</div>
 		);
