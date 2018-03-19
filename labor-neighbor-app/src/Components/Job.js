@@ -15,7 +15,7 @@ export default class Job extends Component{
 				</div>
 				<img className="component_job_pic" src={filler} alt="profile picture" />
 				<div className="component_job_description">
-					Description
+					Distance to job
 				</div>
 			</div>
 		);

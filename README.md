@@ -14,3 +14,6 @@ When you are done working you can commit work by navigating to the labor-neighbo
 
 ## File Structure
 The file structure is still a work in progress, but this is the most recent structure. The heart of the application lives in App.js. That is where the project will be put together. You must import all components before you can use them. The components will be stored in the Components folder and stylesheets will be stored in the Styling folder. Just like the components must be imported, the stylesheets must also be imported within the App.css file. Header and Footer templates have been made which should serve as very basic templates
+
+##For Theresa
+Open Terminal. Type "cd Desktop" then "cd LaborNeighbor" then "cd labor-neighbor-app". After that type "git pull" then "npm start" and you should see the most recent version of the project.

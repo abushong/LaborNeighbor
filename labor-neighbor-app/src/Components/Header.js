@@ -17,8 +17,6 @@ export default class Header extends Component{
 				<Link to="/signup">
 					<p className="component_header_text_right">Log In/Signup</p>
 				</Link>
-			
-
 			</header>
 		);
 	}
