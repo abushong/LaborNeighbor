@@ -1,0 +1,13 @@
+.component_jobboard{
+	background: rgb(255,250,240);
+}
+
+.component_jobboard_intro{
+	width: 100%;
+	text-align: center;
+}
+
+.component_jobboard_jobs{
+	width: 600px;
+	margin: auto;
+}

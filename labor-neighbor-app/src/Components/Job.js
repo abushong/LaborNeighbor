@@ -8,18 +8,25 @@ export default class Job extends Component{
 
     	return (
 			<div className="component_job">
-				<h3 className="component_job_title">Job Title</h3>
+				<h3 className="component_job_title">{this.props.title}</h3>
 				<div className="component_job_details">
 					<p>Laborers:</p>
 					<p>Description:</p>
 					<p>Price</p>
 				</div>
-				<img className="component_job_pic" src={filler} alt="profile picture" />
 				<div className="component_job_user">
-					<h4>Username</h4>
+					<img className="component_job_pic" src={filler} alt="profile picture" />
+					<div className="component_job_container">
+						<h4 className="component_job_name">{this.props.name}</h4>
+						<FontAwesome className="component_job_star" name='fas fa-star' />
+						<FontAwesome className="component_job_star" name='far fa-star' />
+						<FontAwesome className="component_job_star" name='star' />
+						<FontAwesome className="component_job_star" name='far fa-star' />
+						<FontAwesome className="component_job_star" name='star' />
+					</div>
 				</div>
 				<div className="component_job_description">
-					<p>Distance to job</p>
+					<p className="component_job_distance">Distance to job</p>
 					<FontAwesome name='envelope' className="component_job_envelope" size="2x"/>
 				</div>
 			</div>

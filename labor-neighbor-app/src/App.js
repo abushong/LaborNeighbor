@@ -14,7 +14,6 @@ class App extends Component {
         <Header />
         <Routes />
         <Footer />
-        <Job />
         <main>
           {this.props.children}
         </main>
