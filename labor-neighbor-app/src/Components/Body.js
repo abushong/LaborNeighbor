@@ -6,7 +6,6 @@ import img3 from './money.png'
 import img4 from './map.png'
 import img5 from './clock.png'
 import img6 from './screwdriver.png'
-import img7 from './service2.jpg'
 
 
 export default class Body extends Component{
