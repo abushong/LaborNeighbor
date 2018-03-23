@@ -3,19 +3,21 @@
 	text-align: center;
 }
 
-.component_body_intro{
- border-top: 5px solid black;
- width:100%;
-}
-
 .component_body_about{
-	height:310px;
+	height:580px;
 	width:100%;
 	border-bottom: 5px solid black;
+	border-top: 5px solid black;
 }
 
-.component_body_tasks{
-	height:250px;
+.component_body_about h1{
+	padding-top: 225px;
+	position:relative;
+
+}
+
+.component_body_whatwedo{
+	height:325px;
 	width:100%;
 	border-bottom: 5px solid black;
 }
@@ -26,23 +28,29 @@
 	border-bottom: 5px solid black;
 }
 
+.component_about_welcome {
+	opacity:1;
+	background-color: rgb(169,169,169);
+	position:relative;
+	z-index: 2;
+}
+
 .component_body_intro_icons_single{
 	padding: 5px;
 	width: 50px;
 	height: 50px;
 }
 
-.component_body_about_icons_single{
+.component_body_whatwedo_icons_single{
 	display:inline-block;
-	padding: 5px;
-	width: 30px;
-	height: 30px;
+	padding: 10px;
+	width: 40px;
+	height: 40px;
 }
 
 .component_body_about ul{
 	list-style: none;
 	display:inline-block;
-	padding-top:0px;
 }
 
 .component_body_about li{
@@ -50,11 +58,17 @@
 	padding-top:5px;
 }
 
-.component_body_tasks li{
-	padding:5px;
-}
 
-.component_body_tasks ul{
+.component_body_whatwedo li{
+	padding-left:10px;
+	font-size: 18px;
+	display:inline;
+
+}
+.component_body_whatwedo ul{
 	list-style: none;
+	display:inline-block;
+}
+p {
 	display:inline-block;
 }

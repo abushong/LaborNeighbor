@@ -6,68 +6,41 @@ import img3 from './money.png'
 import img4 from './map.png'
 import img5 from './clock.png'
 import img6 from './screwdriver.png'
+import img7 from './service2.jpg'
 
 
 export default class Body extends Component{
 	render(){
 		return(
 			<div className="component_body">
-				<div className="component_body_intro">
-					<h1> Welcome to Labor Neighbor </h1>
-				</div>
 				<div className="component_body_about">
-					<h2>Find Small Jobs Faster. Smarter. Easier.</h2>
-						<p>A world of small jobs and workers surround you. We’ll help you find them.</p>
+				<div className="component_body_about_welcome">
+						<h1>Welcome to Labor Neighbor</h1>
+					</div>
+				</div>
+				<div className="component_body_whatwedo">
+					<h2>What we do</h2>
+					<h4>Find Small Jobs Faster. Smarter. Easier.</h4>
 						<ul>
 							<li>
-								<img className="component_body_about_icons_single" src={img1} alt="work icon" />
-
+								<img className="component_body_whatwedo_icons_single" src={img1} alt="work icon" />
 								Free Signup</li>
 							<li>
-								<img className="component_body_about_icons_single" src={img2} alt="work icon" />
+								<img className="component_body_whatwedo_icons_single" src={img2} alt="work icon" />
 								Fast Connection</li>
 							<li>
-								<img className="component_body_about_icons_single" src={img3} alt="work icon" />
+								<img className="component_body_whatwedo_icons_single" src={img3} alt="work icon" />
 								Immediate Payment</li>
-						</ul>
-						<ul>
+	
 							<li>
-								<img className="component_body_about_icons_single" src={img4} alt="work icon" />
+								<img className="component_body_whatwedo_icons_single" src={img4} alt="work icon" />
 								Local Parameters</li>
-							<li><img className="component_body_about_icons_single" src={img5} alt="work icon" />
+							<li><img className="component_body_whatwedo_icons_single" src={img5} alt="work icon" />
 							On Your Own Time</li>
 							<li>
-								<img className="component_body_about_icons_single" src={img6} alt="work icon" />
+								<img className="component_body_whatwedo_icons_single" src={img6} alt="work icon" />
 								Short Term Work</li>
 						</ul>
-				</div>
-				<div className="component_body_tasks">
-					<h2>Tasks</h2>
-					<ul>
-						<li>Task 1</li>
-						<li>Task 2</li>
-						<li>Task 3</li>
-					</ul>
-					<ul>
-						<li>Task 4</li>
-						<li>Task 5</li>
-						<li>Task 6</li>
-					</ul>
-					<ul>
-						<li>Task 7</li>
-						<li>Task 8</li>
-						<li>Task 9</li>
-					</ul>
-					<ul>
-						<li>Task 10</li>
-						<li>Task 11</li>
-						<li>Task 12</li>
-					</ul>
-					<ul>
-						<li>Task 13</li>
-						<li>Task 14</li>
-						<li>Task 15</li>
-					</ul>
 				</div>
 				<div className="component_body_whowehelp">
 					<h2>Who We Help</h2>
