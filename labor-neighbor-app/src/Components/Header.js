@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import logo from './logofiller.jpg';
-import { Route } from 'react-router-dom';
-import routes from "../routes.js";
 import { Link } from 'react-router-dom'
 
 export default class Header extends Component{
@@ -13,12 +11,12 @@ export default class Header extends Component{
 				</Link>
 				<p className="component_header_text_left">About</p>
 				<p className="component_header_text_left">Contact</p>
-				<p className="component_header_text_left">Job Board</p>
+				<Link to="/jobboard">
+					<p className="component_header_text_left">Job Board</p>
+				</Link>
 				<Link to="/signup">
 					<p className="component_header_text_right">Sign In</p>
 				</Link>
-			
-
 			</header>
 		);
 	}
