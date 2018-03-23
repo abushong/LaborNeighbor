@@ -49,16 +49,18 @@ export default class SignUpSheet extends Component{
 	render(){
 	
 		return(
-			<div className="component_signupsheet">
-				<div className="component_signupsheet_header" >
-					<div onClick={this.isLogin} className={this.state.login}>
-					Login
+			<div className="component_signupsheet_wrapper">
+				<div className="component_signupsheet">
+					<div className="component_signupsheet_header" >
+						<div onClick={this.isLogin} className={this.state.login}>
+						Login
+						</div>
+						<div onClick={this.isSignup} className={this.state.signup}>
+						Sign Up
+						</div>
 					</div>
-					<div onClick={this.isSignup} className={this.state.signup}>
-					Sign Up
-					</div>
+					{this.state.body}
 				</div>
-				{this.state.body}
 			</div>
 		);
 	}
