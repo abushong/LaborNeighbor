@@ -15,7 +15,7 @@ export default class Header extends Component{
 					<p className="component_header_text_left">Job Board</p>
 				</Link>
 				<Link to="/signup">
-					<p className="component_header_text_right">Log In/Signup</p>
+					<p className="component_header_text_right">Sign In</p>
 				</Link>
 			</header>
 		);
