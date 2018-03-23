@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import logo from './logofiller.jpg';
-import { Route } from 'react-router-dom';
-import routes from "../routes.js";
 import { Link } from 'react-router-dom'
 
 export default class Header extends Component{

@@ -4,8 +4,6 @@ import SignUpSheet from "Components/SignUpSheet.js";
 import Body from "Components/Body.js";
 import JobBoard from "Components/JobBoard.js";
 
-import App from "./App.js";
-
 export default class Routes extends Component{
 	render() {
     	return (

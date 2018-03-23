@@ -1,5 +1,8 @@
 .component_jobboard{
 	background: rgb(255,250,240);
+	box-sizing: border-box;
+	margin-top: 30px;
+	overflow: auto;
 }
 
 .component_jobboard_intro{
@@ -7,7 +10,13 @@
 	text-align: center;
 }
 
+.component_jobboard_myjobs{
+	width: 25%;
+	float: left;
+	margin-left: 15%;
+}
+
 .component_jobboard_jobs{
-	width: 600px;
-	margin: auto;
+	width: 60%;
+	float: left;
 }

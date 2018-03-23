@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Job from "Components/Job.js";
+import MyJobs from "Components/MyJobs.js";
 
 export default class JobBoard extends Component{
 	
@@ -7,8 +8,8 @@ export default class JobBoard extends Component{
 		
 		return(
 			<div className="component_jobboard">
-				<div className="component_jobboard_intro">
-					<h1> Welcome to Labor Neighbor </h1>
+				<div className="component_jobboard_myjobs">
+					<MyJobs />
 				</div>
 				<div className="component_jobboard_jobs">
 					<Job name="Tony Longsandles" title="Lawn mowing"/>
