@@ -18,27 +18,34 @@ export default class Body extends Component{
 					</div>
 				</div>
 				<div className="component_body_whatwedo">
-					<h2>What we do</h2>
+					<h2>What We Do</h2>
 					<h4>Find Small Jobs Faster. Smarter. Easier.</h4>
 						<ul>
 							<li>
 								<img className="component_body_whatwedo_icons_single" src={img1} alt="work icon" />
-								Free Signup</li>
+								<p>Free Signup</p>
+							</li>
 							<li>
 								<img className="component_body_whatwedo_icons_single" src={img2} alt="work icon" />
-								Fast Connection</li>
+								<p>Fast Connection</p>
+							</li>
 							<li>
 								<img className="component_body_whatwedo_icons_single" src={img3} alt="work icon" />
-								Immediate Payment</li>
+								<p>Immediate Payment</p>
+							</li>
 	
 							<li>
 								<img className="component_body_whatwedo_icons_single" src={img4} alt="work icon" />
-								Local Parameters</li>
-							<li><img className="component_body_whatwedo_icons_single" src={img5} alt="work icon" />
-							On Your Own Time</li>
+								<p>Local Parameters</p>
+							</li>
+							<li>
+							<img className="component_body_whatwedo_icons_single" src={img5} alt="work icon" />
+							<p>On Your Own Time</p>
+							</li>
 							<li>
 								<img className="component_body_whatwedo_icons_single" src={img6} alt="work icon" />
-								Short Term Work</li>
+								<p>Short Term Work</p>
+							</li>
 						</ul>
 				</div>
 				<div className="component_body_whowehelp">
