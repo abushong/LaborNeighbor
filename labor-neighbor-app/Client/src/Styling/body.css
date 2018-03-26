@@ -91,12 +91,31 @@ h1{
 
 }
 .component_body_completing{
-	height:300px;
+	height:390px;
 	width:100%;
 	background:rgb(255,250,240);
 	box-shadow: 0 1px 5px gray;
 }
 
 .component_body_completing h2{
-	padding:25px;
+	padding-top:25px;
+
+}
+
+.component_body_completing ul {
+	display:inline-block;
+	float:left;
+	padding-right:100px;
+	padding-left:230px;
+}
+
+.component_body_completing li {
+	list-style: none;
+	padding:10px;
+	font-size:18px;
+}
+
+.component_body_completing img {
+	height:40px;
+	padding-right:10px;
 }

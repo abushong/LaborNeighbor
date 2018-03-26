@@ -52,6 +52,61 @@ export default class Body extends Component{
 				</div>
 				<div className="component_body_completing">
 					<h2>Tasks Your Neighbors are Completing Now</h2>
+					<ul>
+						<li>
+						<img src={icon} />
+						Task
+						</li>
+						<li>
+						<img src={icon} />
+						Task
+						</li>
+						<li>
+						<img src={icon} />
+						Task
+						</li>
+						<li>
+						<img src={icon} />
+						Task
+						</li>
+					</ul>
+					<ul>
+						<li>
+						<img src={icon} />
+						Task
+						</li>
+						<li>
+						<img src={icon} />
+						Task
+						</li>
+						<li>
+						<img src={icon} />
+						Task
+						</li>
+						<li>
+						<img src={icon} />
+						Task
+						</li>
+					</ul>
+					<ul>
+						<li>
+						<img src={icon} />
+						Task
+						</li>
+						<li>
+						<img src={icon} />
+						Task
+						</li>
+						<li>
+						<img src={icon} />
+						Task
+						</li>
+						<li>
+						<img src={icon} />
+						Task
+						</li>
+					</ul>
+
 				</div>
 
 			</div>
