@@ -4,6 +4,7 @@
 }
 
 .component_footer_text{
-	margin: 15px;
+	width: 100%;
 	text-align: center;
+	font-weight: bold;
 }

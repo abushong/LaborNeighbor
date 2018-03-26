@@ -19,7 +19,7 @@ app.post('/api/User', (req, res) => {
 
 	console.log('here');
 
-	con.conect(function(err) {
+	con.connect(function(err) {
 		if(err) throw err;
 		console.log("Connected!");
 	});

@@ -1,3 +1,75 @@
 .component_about{
-	
+
+}
+
+.component_about_pic{
+	width: 100%;
+	background: url('../Components/about.jpg');
+	background-position: center top;
+	height: 300px;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.component_about_header{
+	width: 100%;
+	text-align: center;
+	margin-top: 130px;
+	color: white;
+	font-size: 4em;
+}
+
+.component_about_story{
+	width: 100%;
+	text-align: center;
+	height: 200px;
+}
+
+.component_about_story_header{
+	font-size: 3em;
+	margin: 25px 0 0 0;
+	width: 100%;
+}
+
+.component_about_story_body{
+	width: 80%;
+	font-size: 1.4em;
+}
+
+.component_about_team{
+	background-color: cornsilk;
+}
+
+.component_about_team_header{
+	width: 100%;
+	text-align: center;
+	font-size: 3em;
+}
+
+.component_about_team{
+	width: 100%;
+	padding-bottom: 40px;
+}
+
+.component_about_team_member{
+	display: inline-block;
+	width: 20%;
+}
+
+.component_about_team_member img{
+	width: 100px;
+	margin-left: 75px;
+}
+
+.component_about_team_name{
+	width: 100%;
+	text-align: center;
+	font-weight: bold;
+}
+
+.component_about_team_desc{
+	width: 100%;
+	text-align: center;
+	margin: 0;
 }

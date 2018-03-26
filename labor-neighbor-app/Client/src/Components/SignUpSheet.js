@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import Field from "Components/Field.js";
 import Button from "Components/Button.js";
 
@@ -10,7 +11,9 @@ export default class SignUpSheet extends Component{
 			<div className="component_signupsheet_body">
 				<Field name="email" />
 				<Field name="password" />
-				<Button type="login" text="Log In"/>
+				<Link to="/jobboard">
+					<Button type="login" text="Log In"/>
+				</Link>
 			</div>,
 			login: "component_signupsheet_loginbutton component_signupsheet_selected",
 			signup: "component_signupsheet_signupbutton"
@@ -25,7 +28,9 @@ export default class SignUpSheet extends Component{
 				<Field name="last name" />
 				<Field name="email" />
 				<Field name="password" />
-				<Button type="signup" text="Sign Up"/>
+				<Link to="/jobboard">
+					<Button type="signup" text="Sign Up"/>
+				</Link>
 			</div>,
 			login: "component_signupsheet_loginbutton",
 			signup: "component_signupsheet_signupbutton component_signupsheet_selected"
@@ -38,7 +43,9 @@ export default class SignUpSheet extends Component{
 			<div className="component_signupsheet_body">
 				<Field name="email" />
 				<Field name="password" />
-				<Button type="login" text="Log In"/>
+				<Link to="/jobboard">
+					<Button type="login" text="Log In"/>
+				</Link>
 			</div>,
 			login: "component_signupsheet_loginbutton component_signupsheet_selected",
 			signup: "component_signupsheet_signupbutton"
