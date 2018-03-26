@@ -50,6 +50,9 @@ export default class Body extends Component{
 					<img src={img1} alt="Who we help" />
 					</div>
 				</div>
+				<div className="component_body_completing">
+					<h2>Tasks Your Neighbors are Completing Now</h2>
+				</div>
 
 			</div>
 		);
