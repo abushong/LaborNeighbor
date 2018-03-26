@@ -1,0 +1,17 @@
+.component_myjobs{
+	width: 250px;
+	background-color: white;
+	border: 2px solid black;
+	border-radius: 4px;
+	text-align: center;
+}
+
+.component_myjobs_break{
+	width: 90%;
+	font-size: 1px;
+	color: rgba(0, 0, 0, 0);
+	line-height: 1px;
+
+	background-color: grey;
+	margin: auto;
+}

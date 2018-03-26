@@ -1,0 +1,10 @@
+.component_footer{
+	background-color: rgb(163,199,133);
+	height: 50px;
+}
+
+.component_footer_text{
+	width: 100%;
+	text-align: center;
+	font-weight: bold;
+}
