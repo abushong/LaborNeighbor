@@ -3,6 +3,7 @@
 	height: 100px;
 	box-shadow: 0 1px 5px gray;
 	position: relative;
+	font-family: 'Source Sans Pro', sans-serif;
 }
 
 .component_header a, a:visited{

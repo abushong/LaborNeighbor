@@ -15,11 +15,11 @@ export default class Body extends Component{
 				<div className="component_body_about">
 				<div className="component_body_about_welcome">
 						<h1>Welcome to Labor Neighbor</h1>
+						<h3>Find Small Jobs. Faster. Smarter. Easier.</h3>
 					</div>
 				</div>
 				<div className="component_body_whatwedo">
 					<h2>What We Do</h2>
-					<h4>Find Small Jobs Faster. Smarter. Easier.</h4>
 						<ul>
 							<li>
 								<img className="component_body_whatwedo_icons_single" src={img1} alt="work icon" />

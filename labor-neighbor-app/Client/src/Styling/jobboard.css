@@ -3,6 +3,7 @@
 	box-sizing: border-box;
 	padding-top: 30px;
 	overflow: auto;
+	font-family: 'Source Sans Pro', sans-serif;
 }
 
 .component_jobboard_intro{

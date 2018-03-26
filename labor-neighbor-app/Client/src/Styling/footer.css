@@ -1,6 +1,7 @@
 .component_footer{
 	background-color: rgb(163,199,133);
 	height: 50px;
+	font-family: 'Source Sans Pro', sans-serif;
 }
 
 .component_footer_text{

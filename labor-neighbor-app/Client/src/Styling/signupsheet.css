@@ -6,6 +6,7 @@
 	margin: auto;
 	padding-top: 30px;
 	min-height: calc(100vh - 210px);
+	font-family: 'Source Sans Pro', sans-serif;
 }
 
 .component_signupsheet_wrapper{
