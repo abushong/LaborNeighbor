@@ -22,33 +22,91 @@ export default class Body extends Component{
 					<h2>What We Do</h2>
 					<div className="component_whatwedo_tasks">
 						<img src={img1} alt="Signup" />
-						<p className="component_about_team_name">Free Signup</p>
+						<p className="component_body_whatwedo_info">Free Signup</p>
 					</div>
 					<div className="component_whatwedo_tasks">
 						<img src={img6} alt="Work" />
-						<p className="component_about_team_name">Short Term Work</p>
+						<p className="component_body_whatwedo_info">Short Term Work</p>
 					</div>
 					<div className="component_whatwedo_tasks">
 						<img src={img2} alt="Connect" />
-						<p className="component_about_team_name">Fast Connection</p>
+						<p className="component_body_whatwedo_info">Fast Connection</p>
 					</div>
 					<div className="component_whatwedo_tasks">
 						<img src={img3} alt="Pay" />
-						<p className="component_about_team_name">Immediate Payment</p>
+						<p className="component_body_whatwedo_info">Immediate Payment</p>
 					</div>
 					<div className="component_whatwedo_tasks">
 						<img src={img4} alt="Local" />
-						<p className="component_about_team_name">Local Parameters</p>
+						<p className="component_body_whatwedo_info">Local Parameters</p>
 					</div>
 				</div>
 				<div className="component_body_whowehelp">
 					<h2>Who We Help</h2>
-					<div className="component_body_whowehelp_persona">
+					<div className="component_body_whowehelp_persona1">
 						<img src={img1} alt="Who we help" />
 					</div>
-					<div className="component_body_whowehelp_persona">
+					<div className="component_body_whowehelp_persona2">
 					<img src={img1} alt="Who we help" />
 					</div>
+				</div>
+				<div className="component_body_completing">
+					<h2>Tasks Your Neighbors are Completing Now</h2>
+					<ul>
+						<li>
+						<img src={icon} />
+						Task
+						</li>
+						<li>
+						<img src={icon} />
+						Task
+						</li>
+						<li>
+						<img src={icon} />
+						Task
+						</li>
+						<li>
+						<img src={icon} />
+						Task
+						</li>
+					</ul>
+					<ul>
+						<li>
+						<img src={icon} />
+						Task
+						</li>
+						<li>
+						<img src={icon} />
+						Task
+						</li>
+						<li>
+						<img src={icon} />
+						Task
+						</li>
+						<li>
+						<img src={icon} />
+						Task
+						</li>
+					</ul>
+					<ul>
+						<li>
+						<img src={icon} />
+						Task
+						</li>
+						<li>
+						<img src={icon} />
+						Task
+						</li>
+						<li>
+						<img src={icon} />
+						Task
+						</li>
+						<li>
+						<img src={icon} />
+						Task
+						</li>
+					</ul>
+
 				</div>
 
 			</div>

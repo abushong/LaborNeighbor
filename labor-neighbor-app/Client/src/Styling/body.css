@@ -32,7 +32,7 @@ h1{
 }
 
 .component_body_whatwedo{
-	height:325px;
+	height:225px;
 	width:100%;
 	background:rgb(255,250,240);
 	box-shadow: 0 1px 5px gray;
@@ -72,15 +72,50 @@ h1{
 	height:75px;
 }
 
-.component_about_team_name{
+.component_body_whatwedo_info{
 	width: 100%;
 	text-align: center;
 	font-weight: bold;
 	padding-top:15px;
 }
 
-.component_body_whowehelp_persona{
+.component_body_whowehelp_persona1{
+	display:inline-block;
+	height:300px;
+}
+
+.component_body_whowehelp_persona2{
 	display:inline-block;
 	height:100px;
 	padding-left:100px;
+
+}
+.component_body_completing{
+	height:390px;
+	width:100%;
+	background:rgb(255,250,240);
+	box-shadow: 0 1px 5px gray;
+}
+
+.component_body_completing h2{
+	padding-top:25px;
+
+}
+
+.component_body_completing ul {
+	display:inline-block;
+	float:left;
+	padding-right:100px;
+	padding-left:230px;
+}
+
+.component_body_completing li {
+	list-style: none;
+	padding:10px;
+	font-size:18px;
+}
+
+.component_body_completing img {
+	height:40px;
+	padding-right:10px;
 }
