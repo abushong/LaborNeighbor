@@ -5,7 +5,9 @@ import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 import { BrowserRouter } from 'react-router-dom'
 import 'font-awesome/css/font-awesome.min.css';
-
+<head>
+<title>Labor Neighbor</title>
+</head>
 ReactDOM.render((
 	<BrowserRouter>
 		<App />

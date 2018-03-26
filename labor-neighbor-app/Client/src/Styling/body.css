@@ -50,17 +50,6 @@ h1{
 	height: 40px;
 }
 
-.component_body_whatwedo li{
-	padding-left:10px;
-	font-size: 18px;
-	display:inline;
-
-}
-.component_body_whatwedo ul{
-	list-style: none;
-	display:inline-block;
-}
-
 .component_body_whowehelp{
 	height:200px;
 	width:100%;
@@ -72,3 +61,20 @@ h1{
 	padding:25px;
 }
 
+.component_whatwedo_tasks{
+	display: inline-block;
+	width: 20%;
+	padding-top:25px;
+	font-size:14px;
+}
+
+.component_whatwedo_tasks img{
+	height:75px;
+}
+
+.component_about_team_name{
+	width: 100%;
+	text-align: center;
+	font-weight: bold;
+	padding-top:15px;
+}

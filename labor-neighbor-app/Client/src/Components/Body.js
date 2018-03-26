@@ -20,33 +20,26 @@ export default class Body extends Component{
 				</div>
 				<div className="component_body_whatwedo">
 					<h2>What We Do</h2>
-						<ul>
-							<li>
-								<img className="component_body_whatwedo_icons_single" src={img1} alt="work icon" />
-								<p>Free Signup</p>
-							</li>
-							<li>
-								<img className="component_body_whatwedo_icons_single" src={img2} alt="work icon" />
-								<p>Fast Connection</p>
-							</li>
-							<li>
-								<img className="component_body_whatwedo_icons_single" src={img3} alt="work icon" />
-								<p>Immediate Payment</p>
-							</li>
-	
-							<li>
-								<img className="component_body_whatwedo_icons_single" src={img4} alt="work icon" />
-								<p>Local Parameters</p>
-							</li>
-							<li>
-							<img className="component_body_whatwedo_icons_single" src={img5} alt="work icon" />
-							<p>On Your Own Time</p>
-							</li>
-							<li>
-								<img className="component_body_whatwedo_icons_single" src={img6} alt="work icon" />
-								<p>Short Term Work</p>
-							</li>
-						</ul>
+					<div className="component_whatwedo_tasks">
+						<img src={img1} alt="Signup" />
+						<p className="component_about_team_name">Free Signup</p>
+					</div>
+					<div className="component_whatwedo_tasks">
+						<img src={img6} alt="Work" />
+						<p className="component_about_team_name">Short Term Work</p>
+					</div>
+					<div className="component_whatwedo_tasks">
+						<img src={img2} alt="Connect" />
+						<p className="component_about_team_name">Fast Connection</p>
+					</div>
+					<div className="component_whatwedo_tasks">
+						<img src={img3} alt="Pay" />
+						<p className="component_about_team_name">Immediate Payment</p>
+					</div>
+					<div className="component_whatwedo_tasks">
+						<img src={img4} alt="Local" />
+						<p className="component_about_team_name">Local Parameters</p>
+					</div>
 				</div>
 				<div className="component_body_whowehelp">
 					<h2>Who We Help</h2>
