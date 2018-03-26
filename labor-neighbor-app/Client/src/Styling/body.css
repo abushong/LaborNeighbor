@@ -51,7 +51,7 @@ h1{
 }
 
 .component_body_whowehelp{
-	height:200px;
+	height:300px;
 	width:100%;
 	background:rgb(255,250,240);
 	box-shadow: 0 1px 5px gray;
@@ -77,4 +77,10 @@ h1{
 	text-align: center;
 	font-weight: bold;
 	padding-top:15px;
+}
+
+.component_body_whowehelp_persona{
+	display:inline-block;
+	height:300px;
+	padding-left:100px;
 }

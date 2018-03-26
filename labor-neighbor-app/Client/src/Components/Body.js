@@ -43,6 +43,12 @@ export default class Body extends Component{
 				</div>
 				<div className="component_body_whowehelp">
 					<h2>Who We Help</h2>
+					<div className="component_body_whowehelp_persona">
+						<img src={img1} alt="Who we help" />
+					</div>
+					<div className="component_body_whowehelp_persona">
+					<img src={img1} alt="Who we help" />
+					</div>
 				</div>
 
 			</div>
