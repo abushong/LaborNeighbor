@@ -17,6 +17,7 @@
 .component_job_details{
 	float: right;
 	margin-right: 10px;
+	margin-top: 15px;
 	display: block;
 }
 
@@ -28,7 +29,7 @@
 	height: 75px;
 	width: 75px;
 	display: inline-block;
-	margin-left: 15px;
+	margin-left: -115px;
 }
 .component_job_container{
 	display: inline-block;
@@ -38,6 +39,7 @@
 
 .component_job_user{
 	margin-top: 60px;
+	display: block;
 }
 
 .component_job_name{
@@ -62,6 +64,6 @@
 	position: relative;
 	display: inline-block;
 	margin-right: 15px;
+	margin-bottom: 10px;
 	float: right;
-	margin-top: 7px;
 }
