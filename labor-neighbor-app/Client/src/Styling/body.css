@@ -82,12 +82,14 @@ h1{
 .component_body_whowehelp_persona1{
 	display:inline-block;
 	height:300px;
+	padding-right:300px;
+
 }
 
 .component_body_whowehelp_persona2{
 	display:inline-block;
 	height:300px;
-	padding-left:100px;
+	padding-left:250px;
 
 }
 .component_body_completing{
