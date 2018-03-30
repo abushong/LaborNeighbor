@@ -91,7 +91,7 @@ h1{
 
 }
 .component_body_completing{
-	height:390px;
+	height:300px;
 	width:100%;
 	background:rgb(255,250,240);
 	box-shadow: 0 1px 5px gray;
@@ -105,8 +105,8 @@ h1{
 .component_body_completing ul {
 	display:inline-block;
 	float:left;
-	padding-right:100px;
-	padding-left:230px;
+	padding-right:7%;
+	padding-left:15%;
 }
 
 .component_body_completing li {
@@ -118,4 +118,9 @@ h1{
 .component_body_completing img {
 	height:40px;
 	padding-right:10px;
+}
+
+.component_body_completing h4{
+	display:block;
+	font-size:18px;
 }

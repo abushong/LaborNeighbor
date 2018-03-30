@@ -54,59 +54,46 @@ export default class Body extends Component{
 					<h2>Tasks Your Neighbors are Completing Now</h2>
 					<ul>
 						<li>
-						<img src={icon} />
-						Task
+						Lawn Mowing
 						</li>
 						<li>
-						<img src={icon} />
-						Task
+						Gardening
 						</li>
 						<li>
-						<img src={icon} />
-						Task
+						Leave Raking
 						</li>
 						<li>
-						<img src={icon} />
-						Task
+						Shoveling
 						</li>
 					</ul>
 					<ul>
 						<li>
-						<img src={icon} />
-						Task
+						Junk Removal
 						</li>
 						<li>
-						<img src={icon} />
-						Task
+						House Cleaning
 						</li>
 						<li>
-						<img src={icon} />
-						Task
+						Pool Cleaning
 						</li>
 						<li>
-						<img src={icon} />
-						Task
+						Car Wash
 						</li>
 					</ul>
 					<ul>
 						<li>
-						<img src={icon} />
-						Task
+						Furniture Assembly
 						</li>
 						<li>
-						<img src={icon} />
-						Task
+						Moving
 						</li>
 						<li>
-						<img src={icon} />
-						Task
+						Computer Help
 						</li>
 						<li>
-						<img src={icon} />
-						Task
+						And many more...
 						</li>
 					</ul>
-
 				</div>
 
 			</div>
