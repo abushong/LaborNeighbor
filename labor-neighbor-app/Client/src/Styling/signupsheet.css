@@ -31,6 +31,27 @@
 	background-color: white;
 }
 
+.component_signupsheet_position{
+	width: 100%;
+	text-align: center;
+	margin-bottom: 3px;
+}
+
+.component_signupsheet_radios{
+	width: 100%;
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+.component_signupsheet_radio_right{
+	margin-left: 15px;
+	margin-right: 2px;
+}
+
+.component_signupsheet_radio_left{
+	margin-right: 2px;
+}
+
 .component_signupsheet_loginbutton{
 	height: 60px;
 	width: 50%;

@@ -28,6 +28,12 @@ export default class SignUpSheet extends Component{
 				<Field name="last name" />
 				<Field name="email" />
 				<Field name="password" />
+				<p className="component_signupsheet_position">I would like to:</p>
+				<br></br>
+				<div className="component_signupsheet_radios">
+					<p className="component_signupsheet_radio_left">Find Jobs</p><input type="radio" name="jobs" value="employee"></input>
+					<p className="component_signupsheet_radio_right">Post Jobs</p><input type="radio" name="jobs" value="employer"></input>
+				</div>
 				<Link to="/jobboard">
 					<Button type="signup" text="Sign Up"/>
 				</Link>
