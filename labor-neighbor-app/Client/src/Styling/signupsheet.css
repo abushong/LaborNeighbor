@@ -5,7 +5,7 @@
 	padding-bottom: 10px;
 	margin: auto;
 	padding-top: 30px;
-	min-height: calc(100vh - 210px);
+	min-height: calc(100vh - 190px);
 	font-family: 'Source Sans Pro', sans-serif;
 }
 
@@ -25,6 +25,7 @@
 
 .component_signupsheet_body{
 	border: solid 1px lightgray;
+	border-top: solid 1px white;
 	width: 100%;
 	box-sizing: border-box;
 	background-color: white;
@@ -64,9 +65,9 @@
 }
 
 .component_signupsheet_selected{
-	background-color: rgb(163,199,133);
+	background-color: white;
 }
 
 .component_signupsheet_nonselected{
-	background-color: white;
+	background-color: rgb(163,199,133);
 }

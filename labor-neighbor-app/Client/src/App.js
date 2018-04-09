@@ -7,7 +7,7 @@ import SignUpSheet from "Components/SignUpSheet.js";
 
 class App extends Component {
   state = {
-    response: ''
+    response: 'Test'
   };
 
   componentDidMount(){
@@ -17,7 +17,7 @@ class App extends Component {
   }
 
   callApi = async () => {
-    const response = await fetch('/api/User', {method: 'POST'});
+    const response = await fetch('/api/user', {method: 'POST'});
     const body = await response.json();
 
     if (response.status !== 200) throw Error(body.message);
@@ -29,6 +29,7 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
+        {this.state.response}
         <Routes />
         <Footer />
         <main>

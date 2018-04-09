@@ -16,7 +16,7 @@ export default class SignUpSheet extends Component{
 				</Link>
 			</div>,
 			login: "component_signupsheet_loginbutton component_signupsheet_selected",
-			signup: "component_signupsheet_signupbutton"
+			signup: "component_signupsheet_signupbutton component_signupsheet_nonselected"
 		}
 	}
 
@@ -32,7 +32,7 @@ export default class SignUpSheet extends Component{
 					<Button type="signup" text="Sign Up"/>
 				</Link>
 			</div>,
-			login: "component_signupsheet_loginbutton",
+			login: "component_signupsheet_loginbutton component_signupsheet_nonselected",
 			signup: "component_signupsheet_signupbutton component_signupsheet_selected"
 		 });	
 	}
@@ -48,7 +48,7 @@ export default class SignUpSheet extends Component{
 				</Link>
 			</div>,
 			login: "component_signupsheet_loginbutton component_signupsheet_selected",
-			signup: "component_signupsheet_signupbutton"
+			signup: "component_signupsheet_signupbutton component_signupsheet_nonselected"
 		});
 	}
 

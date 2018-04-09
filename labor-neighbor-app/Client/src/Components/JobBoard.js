@@ -12,7 +12,7 @@ export default class JobBoard extends Component{
 					<MyJobs />
 				</div>
 				<div className="component_jobboard_jobs">
-					<Job name="Tony Longsandles" title="Lawn mowing"/>
+					<Job name="Tony Longsandles" title="Lawn mowing" desc="Mow my big ass lawn" laborers="1" price="$10/hr" distance="4.3 miles"/>
 					<Job name="Jim" title="Do my laundry" />
 				</div>
 			</div>

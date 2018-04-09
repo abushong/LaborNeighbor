@@ -54,6 +54,15 @@
 	margin: 15px 0 5px 5px;
 }
 
+.component_job_description a{
+	color: black;
+}
+
+.component_job_description a:hover{
+	color: rgb(163,199,133);
+}
+
+
 .component_job_distance{
 	position: relative;
 	display: inline-block;
