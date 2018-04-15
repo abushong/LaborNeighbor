@@ -14,7 +14,14 @@ export default class About extends Component{
 				<div className="component_about_story">
 					<p className="component_about_story_header">Our Story</p>
 					<p className="component_about_story_body">
-						We started Labor Neighbor as a project for our senior capstone class. Lorem Ipsum and all that jazz. Lorem Ipsum and all that jazz. Lorem Ipsum and all that jazz. Lorem Ipsum and all that jazz.
+						We started Labor Neighbor as a project for our senior capstone class. As college students, 
+						we were looking for a reliable way to find short term work and make extra money during
+						breaks from school while being able to help out members of our community. Labor Neighbor 
+						connects college aged individuals seeking short term work with members of their 
+						communities or the surrounding areas who are in need of labor assistance. With the click 
+						of a button, we will connect you to small jobs and workers in your surrounding area. From 
+						there, you decided when the work will be completed. Not only do you get the job done, but 
+						now have a new connection for future short term work opportunities all through Labor Neighbor.
 					</p>
 				</div>
 				<div className="component_about_team">
@@ -22,27 +29,27 @@ export default class About extends Component{
 					<div className="component_about_team_member">
 						<img src={icon} alt="team member photo" />
 						<p className="component_about_team_name">Austin</p>
-						<p className="component_about_team_desc">Baller</p>
+						<p className="component_about_team_desc">Research Analyst</p>
 					</div>
 					<div className="component_about_team_member">
 						<img src={icon} alt="team member photo" />
 						<p className="component_about_team_name">Theresa</p>
-						<p className="component_about_team_desc">Shot Caller</p>
+						<p className="component_about_team_desc">Project Manager</p>
 					</div>
 					<div className="component_about_team_member">
 						<img src={icon} alt="team member photo" />
 						<p className="component_about_team_name">Cyree</p>
-						<p className="component_about_team_desc">Twenty Inch</p>
+						<p className="component_about_team_desc">Marketing Specialist</p>
 					</div>
 					<div className="component_about_team_member">
 						<img src={icon} alt="team member photo" />
 						<p className="component_about_team_name">Adam</p>
-						<p className="component_about_team_desc">Blades on</p>
+						<p className="component_about_team_desc">Web Designer & Copywriter</p>
 					</div>
 					<div className="component_about_team_member">
 						<img src={icon} alt="team member photo" />
 						<p className="component_about_team_name">Alex</p>
-						<p className="component_about_team_desc">The Impalla</p>
+						<p className="component_about_team_desc">Lead Developer</p>
 					</div>
 				</div>
 			</div>

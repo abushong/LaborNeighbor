@@ -16,9 +16,9 @@
 
 .component_header_img{
 	float: left;
-	height: 40px;
-	width: 70px;
-	margin: 30px;
+	height:50px;
+	margin-left: 15px;
+	margin-top: 30px;
 }
 
 .component_header_text_left{

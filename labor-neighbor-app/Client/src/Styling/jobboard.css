@@ -9,15 +9,27 @@
 .component_jobboard_intro{
 	width: 100%;
 	text-align: center;
+	display:inline-block;
 }
 
+.component_jobboard_myjobscontainer {
+	border: 2px solid black;
+	width:25%;
+	height:100%;
+
+}
 .component_jobboard_myjobs{
 	width: 25%;
 	float: left;
 	margin-left: 15%;
+	display:inline-block;
 }
 
+.component_jobboard_jobscontainer {
+
+}
 .component_jobboard_jobs{
 	width: 60%;
 	float: left;
+	display:inline-block;
 }
