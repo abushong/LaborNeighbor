@@ -17,7 +17,7 @@ class App extends Component {
   }
 
   callApi = async () => {
-    const response = await fetch('/api/user', {method: 'POST'});
+    const response = await fetch('/api/hello');
     const body = await response.json();
 
     if (response.status !== 200) throw Error(body.message);
@@ -29,7 +29,6 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
-        {this.state.response}
         <Routes />
         <Footer />
         <main>

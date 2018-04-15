@@ -7,7 +7,9 @@
     "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\""
   },
   "dependencies": {
+    "body-parser": "^1.18.2",
     "express": "^4.16.3",
+    "jquery": "^3.3.1",
     "mysql": "^2.15.0"
   },
   "devDependencies": {
