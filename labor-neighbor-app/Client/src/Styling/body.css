@@ -51,14 +51,16 @@ h1{
 }
 
 .component_body_whowehelp{
-	height:300px;
+	height:520px;
 	width:100%;
 	background:rgb(255,250,240);
 	box-shadow: 0 1px 5px gray;
+	text-align:left;
 }
 
 .component_body_whowehelp h2{
-	padding:25px;
+	padding-top:25px;
+	text-align: center;
 }
 
 .component_whatwedo_tasks{
@@ -79,21 +81,46 @@ h1{
 	padding-top:15px;
 }
 
-.component_body_whowehelp_persona1{
-	display:inline-block;
-	height:300px;
-	padding-right:300px;
-
+.component_body_whowehelp_personaimg{
+	height:250px;
+	margin-top:15px;
+	border-radius:5px;
 }
+.component_body_whowehelp_persona1{
+	border: 1px solid black;
+  background-color: white;
+  border-radius: 5px;
+  margin-left:5%;
+  padding:25px;
+  width: 40%;
+  display:inline-block;
+  vertical-align: top;
+}
+ .component_body_whowehelp_persona1 img {
+      margin: auto;
+      float: none;
+      display: block;
+      height:250px;
+  }
 
 .component_body_whowehelp_persona2{
-	display:inline-block;
-	height:300px;
-	padding-left:250px;
-	height:100px;
-	padding-left:100px;
+	border: 1px solid black;
+  background-color: white;
+  border-radius: 5px;
+  padding: 16px;
+  margin-left:3%;
+  width: 40%;
+ display:inline-block;
 
 }
+
+ .component_body_whowehelp_persona2 img {
+      margin: auto;
+      float: none;
+      display: block;
+      height:250px;
+      border-radius: 5px;
+  }
 .component_body_completing{
 	height:300px;
 	width:100%;

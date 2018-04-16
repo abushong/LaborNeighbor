@@ -1,5 +1,5 @@
 .component_header{
-	background-color:rgb(163,199,133);
+	background-color:white;
 	height: 100px;
 	box-shadow: 0 1px 5px gray;
 	position: relative;
@@ -11,7 +11,7 @@
 	color: black;
 }
 .component_header a:hover{
-	color: azure;
+	color: rgb(163,199,133);
 }
 
 .component_header_img{
