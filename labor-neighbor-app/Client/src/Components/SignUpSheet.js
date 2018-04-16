@@ -14,9 +14,9 @@ export default class SignUpSheet extends Component{
 				<Field name="email" onUpdate={this.onUpdate}/>
 				<Field name="password" onUpdate={this.onUpdate}/>
 				<div className="component_signupsheet_submitcontainer">
-					<Link to="/jobboard">
-					<button className="component_signupsheet_submit">Sign In</button>
-					</Link>
+					
+					<button className="component_signupsheet_submit" onClick={this.verifyLogin}>Sign In</button>
+					
 				</div>
 			</div>,
 			login: "component_signupsheet_loginbutton component_signupsheet_selected",
@@ -62,7 +62,7 @@ export default class SignUpSheet extends Component{
 				<Field name="password" onUpdate={this.onUpdate}/>
 				<div className="component_signupsheet_submitcontainer">
 					<Link to="/jobboard">
-					<button className="component_signupsheet_submit">Sign In</button>
+					<button className="component_signupsheet_submit" onClick={this.verifyLogin}>Sign In</button>
 					</Link>
 				</div>
 			</div>,
@@ -100,6 +100,29 @@ export default class SignUpSheet extends Component{
 
 	login = () => {
 		//in progress
+		var data = {
+			"Email" : this.state.email,
+			"Password" : this.state.password
+		}
+
+		console.log(JSON.stringify(data));
+
+		var verify = {
+			"async" : true,
+	  		"crossDomain" : true,
+	  		"method" : "GET",
+	  		"headers": {
+    			"Content-Type": "application/json",
+    			"Cache-Control": "no-cache"
+  			},
+  			"url" : 'http://localhost:3000/api/login',						
+	    	"processData" : false,
+	    	"data" : JSON.stringify(data)
+		}
+
+		$.ajax(verify).done(function (response) {
+			console.log(response);
+		});
 	}
 
 	addUser = () => {

@@ -92,8 +92,8 @@ app.get("/api/users", (req, res) => {
 
 });
 
-app.get("api/users/login" , (req,res) => {
-	
+app.get("api/login" , (req,res) => {
+	console.log("login test");
 	var con = mysql.createConnection({
 		host: "localhost",
 		user: "ln",
@@ -105,8 +105,9 @@ app.get("api/users/login" , (req,res) => {
 		var user = req.body;
 
 		if(err) throw err;
-		con.query("SELECT EXISTS(SELECT 1 FROM Users WHERE Email = user.Email", function(err, result){
+		con.query("SELECT EXISTS(SELECT 1 FROM Users WHERE Email = user.Email)", function(err, result){
 			if(err) throw err;
+			console.log(result);
 			console.log("sign in successful");
 			res.send(result);
 		});
