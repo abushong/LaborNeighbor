@@ -5,7 +5,7 @@ export default class Footer extends Component{
 		return(
 			<footer className="component_footer">
 				<p className="component_footer_text">Find Small Jobs. Fast, smarter, easier. </p>
-			 <a href="#">service@laborneighbor.com</a>
+			 <a href="#"> | service@laborneighbor.com</a>
 			</footer>
 		);
 	}
