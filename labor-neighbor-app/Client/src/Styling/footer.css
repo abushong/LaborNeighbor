@@ -2,6 +2,7 @@
 	background-color: rgb(163,199,133);
 	height: 50px;
 	font-family: 'Source Sans Pro', sans-serif;
+	text-align: center;
 }
 
 .component_footer_text{
@@ -10,4 +11,15 @@
 	font-weight: bold;
 	margin-top:10px;
 	padding-top: 5px;
+	display:inline;
 }
+a {
+	display:inline;
+	text-decoration: none;
+	color:black;
+	font-weight:bold;
+}
+
+a:hover {
+	cursor:pointer;
+	}
