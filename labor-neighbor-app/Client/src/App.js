@@ -4,6 +4,7 @@ import Routes from './routes.js';
 import Header from "Components/Header.js";
 import Footer from "Components/Footer.js";
 import SignUpSheet from "Components/SignUpSheet.js";
+import Contact from "Components/Contact.js";
 
 class App extends Component {
   state = {

@@ -1,4 +1,10 @@
 /* Style inputs with type="text", select elements and textareas */
+body{
+    background-color: rgb(255,250,240);
+}
+.component_contact{
+    width:50%;
+}
 input[type=text], select, textarea {
     width: 100%; /* Full width */
     padding: 12px; /* Some padding */  
@@ -12,12 +18,15 @@ input[type=text], select, textarea {
 
 /* Style the submit button with a specific background color etc */
 input[type=submit] {
-    background-color: #4CAF50;
-    color: white;
+    background-color: rgb(163,199,133);
+    color: black;
+    font-weight: bold;
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    margin-bottom: 2%;
+    margin-left: 2%;
 }
 
 /* When moving the mouse over the submit button, add a darker green color */
@@ -26,8 +35,14 @@ input[type=submit]:hover {
 }
 
 /* Add a background color and some padding around the form */
-.container {
+.component_contact {
     border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
+    padding:15px;
+    margin-left:25%;
+    margin-top:10px;
+    margin-bottom:50px;
+}
+
+.component_contact p {
+    margin-bottom: 25px;
 }

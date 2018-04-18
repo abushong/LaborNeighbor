@@ -56,7 +56,7 @@ export default class Body extends Component{
   				<img src={img8} alt="Persona2" />
   				<p>Cassi</p>
   				<p>"I use Labor Neighbor as a way to get some extra money when I'm home on breaks from college. With so many choices of ways to help, there is
-  				always a job I am interested in doing. Labor Neighbor allows me to earn money without the long term commitment of a job."</p>
+  				always a job I am interested in doing. I love how Labor Neighbor allows me to earn money without the long term commitment of a job."</p>
 				</div>
 				</div>
 				<div className="component_body_completing">

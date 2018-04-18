@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
-<<<<<<< HEAD
-=======
-
->>>>>>> 8f1c66523cccdac28e8cdbd0f47e979f948347eb
 export default class Contact extends Component{
 	render(){
 		return(
 		<div className="component_contact">
+    <h2>Contact</h2>
+    <p>Whether it is a problem with your work transaction or just a few questions about our service, we are always here to help! Please
+    fill out the form to leave your message and a member of our team will reach out to you as soon as possible.</p>
       <form>
 
         <label for="fname">First Name</label>
@@ -14,17 +13,19 @@ export default class Contact extends Component{
 
         <label for="lname">Last Name</label>
         <input type="text" idName="lname" name="lastname" placeholder="Last Name" />
-
-        <label for="country">What can we help you with?</label>
-        <select idName="country" name="country">
+        <label for="lname">Email Address</label>
+        <input type="text" idName="email" name="email" placeholder="Email" />
+        <label for="helpcategory">What can we help you with?</label>
+        <select idName="helpcategory" name="helpcategory">
           <option value="general information">General Information</option>
           <option value="website troubleshooting">Website Troubleshooting</option>
           <option value="payment problems">Payment Problem</option>
           <option value="task completion problems">Task Completion Problem</option>
+          <option value="other">Other</option>
         </select>
 
         <label for="subject">Message</label>
-        <textarea idName="subject" name="subject" placeholder="Write something.."></textarea>
+        <textarea idName="subject" name="subject" placeholder="How can we help?"></textarea>
 
         <input type="submit" value="Submit" />
 
