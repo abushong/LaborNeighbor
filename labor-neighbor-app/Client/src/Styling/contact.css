@@ -1,6 +1,6 @@
 /* Style inputs with type="text", select elements and textareas */
 body{
-    background-color: rgb(255,250,240);
+    background: url('../Components/about.jpg')
 }
 .component_contact{
     width:50%;
@@ -39,8 +39,10 @@ input[type=submit]:hover {
     border-radius: 5px;
     padding:15px;
     margin-left:25%;
-    margin-top:10px;
+    margin-top:30px;
     margin-bottom:50px;
+    background: rgb(255,250,240);
+    border:3px solid white;
 }
 
 .component_contact p {

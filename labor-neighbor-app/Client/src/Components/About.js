@@ -1,6 +1,12 @@
 import React, { Component } from 'react';
 import img from './about.jpg';
 import icon from './dingus.png';
+import adam from './AdamLN.jpg';
+import alex from './AlexLN.jpg';
+import austin from './AustinLN.jpg';
+import cyree from './CyreeLN.jpg';
+import luke from './LukeLN.jpg';
+import tree from './TheresaLN (1).jpg';
 
 export default class About extends Component{
 
@@ -27,27 +33,32 @@ export default class About extends Component{
 				<div className="component_about_team">
 					<p className="component_about_team_header">Know Your Neighbor</p>
 					<div className="component_about_team_member">
-						<img src={icon} alt="team member photo" />
-						<p className="component_about_team_name">Austin</p>
-						<p className="component_about_team_desc">Research Analyst</p>
-					</div>
-					<div className="component_about_team_member">
-						<img src={icon} alt="team member photo" />
+						<img src={tree} alt="team member photo" />
 						<p className="component_about_team_name">Theresa</p>
 						<p className="component_about_team_desc">Project Manager</p>
 					</div>
 					<div className="component_about_team_member">
-						<img src={icon} alt="team member photo" />
+						<img src={luke} alt="team member photo" />
+						<p className="component_about_team_name">Luke</p>
+						<p className="component_about_team_desc">Creative Designer</p>
+					</div>
+					<div className="component_about_team_member">
+						<img src={austin} alt="team member photo" />
+						<p className="component_about_team_name">Austin</p>
+						<p className="component_about_team_desc">Research Analyst</p>
+					</div>
+					<div className="component_about_team_member">
+						<img src={cyree} alt="team member photo" />
 						<p className="component_about_team_name">Cyree</p>
 						<p className="component_about_team_desc">Marketing Specialist</p>
 					</div>
 					<div className="component_about_team_member">
-						<img src={icon} alt="team member photo" />
+						<img src={adam} alt="team member photo" />
 						<p className="component_about_team_name">Adam</p>
 						<p className="component_about_team_desc">Web Designer & Copywriter</p>
 					</div>
 					<div className="component_about_team_member">
-						<img src={icon} alt="team member photo" />
+						<img src={alex} alt="team member photo" />
 						<p className="component_about_team_name">Alex</p>
 						<p className="component_about_team_desc">Lead Developer</p>
 					</div>

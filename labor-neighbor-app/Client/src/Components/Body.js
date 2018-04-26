@@ -44,19 +44,23 @@ export default class Body extends Component{
 					</div>
 				</div>
 				<div className="component_body_whowehelp">
-					<h2>Who We Help</h2>
+					<h2>Client Testimonials</h2>
 				<div className="component_body_whowehelp_persona1">
   				<img src={img7} alt="Persona1" />
-  				<p>John and Lisa</p>
+  				<h4>Lisa and John</h4>
+  				<div className="component_body_whowehelp_personatext">
   				<p>"We used Labor Neighbor to find a dog sitter at a week's notice. Finding someone to help was quick and the work done was exceptional. 
   				It is so nice to be able to find reliable help at the click of a button!"</p>
+				</div>
 				</div>
 
 				<div className="component_body_whowehelp_persona2">
   				<img src={img8} alt="Persona2" />
-  				<p>Cassi</p>
+  				<h4>Cassi</h4>
+  				<div className="component_body_whowehelp_personatext">
   				<p>"I use Labor Neighbor as a way to get some extra money when I'm home on breaks from college. With so many choices of ways to help, there is
   				always a job I am interested in doing. I love how Labor Neighbor allows me to earn money without the long term commitment of a job."</p>
+				</div>
 				</div>
 				</div>
 				<div className="component_body_completing">

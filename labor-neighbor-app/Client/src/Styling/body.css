@@ -34,7 +34,7 @@ h1{
 .component_body_whatwedo{
 	height:225px;
 	width:100%;
-	background:rgb(255,250,240);
+	background:white;
 	box-shadow: 0 1px 5px gray;
 }
 
@@ -53,7 +53,7 @@ h1{
 .component_body_whowehelp{
 	height:520px;
 	width:100%;
-	background:rgb(255,250,240);
+	background:white;
 	box-shadow: 0 1px 5px gray;
 	text-align:left;
 }
@@ -94,13 +94,11 @@ h1{
   width: 40%;
   display:inline-block;
   vertical-align: top;
-  font-weight: bold;
   text-align: center;
 }
  .component_body_whowehelp_persona1 img {
-      margin: auto;
       float: none;
-      display: block;
+      display: inline;
       height:250px;
       border: 3px solid white;
       border-radius: 8px;
@@ -108,6 +106,8 @@ h1{
 
 .component_body_whowehelp_persona1 p {
 	margin-top: 5px;
+	display:inline;
+	text-align: 
 }
 .component_body_whowehelp_persona2{
   border-radius: 5px;
@@ -115,7 +115,6 @@ h1{
   margin-left:3%;
   width: 40%;
  display:inline-block;
- font-weight: bold;
  text-align: center;
 
 }
@@ -123,20 +122,22 @@ h1{
  .component_body_whowehelp_persona2 img {
       margin: auto;
       float: none;
-      display: block;
+      display: inline;
       height:250px;
       border: 3px solid white;
       border-radius: 8px;
   }
 
 .component_body_whowehelp_persona2 p {
-	margin-top: 5px;
+	margin-bottom:10px;
+	display:inline;
+	text-align: left;
 }
 
 .component_body_completing{
 	height:300px;
 	width:100%;
-	background:rgb(255,250,240);
+	background:white;
 	box-shadow: 0 1px 5px gray;
 }
 
@@ -167,4 +168,8 @@ h1{
 .component_body_completing h4{
 	display:block;
 	font-size:18px;
+}
+
+.component_body_whowehelp_personatext{
+	text-align: left;
 }

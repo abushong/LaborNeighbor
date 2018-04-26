@@ -21,13 +21,11 @@
 .component_jobboard_myjobs{
 	width: 25%;
 	float: left;
-	margin-left: 15%;
+	margin-left: 3%;
 	display:inline-block;
+	height:20%;
 }
 
-.component_jobboard_jobscontainer {
-
-}
 .component_jobboard_jobs{
 	width: 60%;
 	float: left;

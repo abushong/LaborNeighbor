@@ -25,6 +25,7 @@
 	width: 100%;
 	text-align: center;
 	height: 320px;
+	background: white;
 }
 
 .component_about_story_header{
@@ -57,13 +58,14 @@
 
 .component_about_team_member{
 	display: inline-block;
-	width: 20%;
+	width: 16.5%;
 	padding-top: 25px;
 }
 
 .component_about_team_member img{
-	width: 100px;
-	margin-left: 75px;
+	width: 170px;
+	margin-left: 40px;
+	border-radius: 10px;
 }
 
 .component_about_team_name{
