@@ -22,4 +22,14 @@ a {
 
 a:hover {
 	cursor:pointer;
-	}
+	color: white;
+}
+
+.component_footer_signout{
+	font-weight: bold;
+}
+
+.component_footer_signout:hover{
+	color: white;
+	cursor: pointer;
+}

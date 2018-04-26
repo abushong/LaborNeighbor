@@ -1,0 +1,116 @@
+.component_postjob_wrapper{
+	width: 100%;
+	height: 100%;
+	background-image: url(../Components/house-background.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	min-height: calc(100vh - 150px);
+}
+
+.component_postjob_extra{
+	padding-top: 30px;
+}
+
+.component_postjob{
+	max-width: 700px;
+	margin: auto;
+	border: solid 1px lightgray;
+	border-radius: 5px;
+	margin-bottom: 30px;
+	background-color: white;
+}
+
+.component_postjob_title{
+	width: 100%;
+	text-align: center;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 1.3em;
+	font-weight: bold;
+	padding-top: 15px;
+}
+
+.component_postjob_another_title{
+	font-weight: bold;
+	width: 100%;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.component_postjob_date{
+	font-size: .8em;
+	display: inline-block;
+	margin-left: 50px;
+}
+
+.component_postjob_date_size{
+	margin-top: 5px;
+}
+
+.component_postjob_drop{
+	display: inline-block;
+	width: 130px;
+	margin-left: 35px;
+	font-size: .8em;
+}
+
+.component_postjob_drop_size{
+	width: 50px;
+	margin-left: 30px;
+}
+
+.component_postjob_drop_size.right{
+	margin-left: 20px;
+}
+
+.component_postjob_field{
+	display: inline-block;
+	width: 350px;
+}
+
+.component_postjob_submit{
+	outline: none;
+	padding: 10px 25px;
+	width: 150px;
+	margin-bottom: 20px;
+	border-radius: 4px;
+	font-size: 16px;
+	border: solid 1px lightgray;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+.component_postjob_submit.again{
+	width: 200px;
+}
+
+.component_postjob_submit:hover{
+	background-color: rgb(163,199,133);
+	cursor: pointer;
+	color: white;
+}
+.component_postjob_submit:active{
+	background-color: #77b245;
+}
+
+.component_postjob_button{
+	width: 100%;
+	text-align: center;
+	margin-top: 10px;
+}
+
+.component_postjob_text{
+	width: 500px;
+	margin: 0 100px 0 100px ;
+}
+
+.component_postjob_text_size{
+	resize: none;
+	margin-top: 10px;
+}
+
+.component_postjob_text_size:focus{
+	outline: none;
+	background-color: #f3ffdd;
+}
