@@ -29,7 +29,7 @@
 	height: 75px;
 	width: 75px;
 	display: inline-block;
-	margin-left: -115px;
+	margin-left: -5em;
 }
 .component_job_container{
 	display: inline-block;
@@ -38,6 +38,7 @@
 }
 
 .component_job_user{
+	width: 100%;
 	margin-top: 60px;
 	display: block;
 }

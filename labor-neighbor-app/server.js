@@ -3,7 +3,7 @@ const mysql = require('mysql');
 var app = express();
 const port = process.env.PORT || 5000;
 var bodyParser = require('body-parser');
-
+var token = "abcd1234";
 app.use(bodyParser());
 //app.use(bodyParser.urlencoded());
 
@@ -51,22 +51,21 @@ app.post('/api/user2', (req, res) => {
 		console.log("Connected!");
 		var user = req.body;
 
-		var sql = "INSERT INTO Users (FirstName, LastName, Email, Password) VALUES "
+		var sql = "INSERT INTO Users (FirstName, LastName, Email, Password, UserType) VALUES "
 		+ "('" + String(user.FirstName) + "','"
 			+ user.LastName + "','"
+			+ user.Email + "','"
 			+ user.Password + "','"
-			+ user.Email + "');";
+			+ user.UserType + "');";
 
 		console.log(sql);
-		var values = [
-			[user.FirstName, user.LastName, user.Email, user.Password]
-		];
+		
 		con.query(sql, function(err, result){
 			if(err){
 				console.log(err);
 				return;
 			}
-				console.log("1 record inserted");
+			console.log("1 record inserted");
 			res.send(result);
 		});
 	});
@@ -92,7 +91,26 @@ app.get("/api/users", (req, res) => {
 
 });
 
-app.get("api/login" , (req,res) => {
+app.get("/api/jobs", (req, res) => {
+
+	var con = mysql.createConnection({
+		host: "localhost",
+		user: "ln",
+		password: "password",
+		database: "LaborNeighbor"
+	});
+
+	con.connect(function(err) {
+		if(err) throw err;
+		con.query("SELECT * FROM Jobs", function(err, result,fields){
+			if(err) throw err;
+				console.log(result);
+			res.send(result);
+		});
+	});
+});
+
+app.post("/api/login" , (req,res) => {
 	console.log("login test");
 	var con = mysql.createConnection({
 		host: "localhost",
@@ -102,14 +120,23 @@ app.get("api/login" , (req,res) => {
 	});
 
 	con.connect(function(err) {
+		console.log("connected");
 		var user = req.body;
+		var sql = "SELECT EXISTS(SELECT 1 FROM Users WHERE Email = '" + user.Email + "' AND Password = '" + user.Password + "') AS N";
 
 		if(err) throw err;
-		con.query("SELECT EXISTS(SELECT 1 FROM Users WHERE Email = user.Email)", function(err, result){
-			if(err) throw err;
-			console.log(result);
+		con.query(sql, function(err, result){
+			if(err){
+				console.log(err);
+				return;
+			}
 			console.log("sign in successful");
-			res.send(result);
+			console.log("result: " + result[0].N);
+			if(result[0].N === 1){
+				res.send(token);
+			}
+			else	
+				res.send('incorrect');
 		});
 	});
 });

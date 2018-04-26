@@ -24,7 +24,8 @@ export default class SignUpSheet extends Component{
 			first: 'filler',
 			last: 'lastfiller',
 			email: 'emailfiller',
-			password: 'passwordfiller'
+			password: 'passwordfiller',
+			usertype: 'userfiller'
 		};
 		this.addUser = this.addUser.bind(this);
 	}
@@ -40,13 +41,13 @@ export default class SignUpSheet extends Component{
 				<p className="component_signupsheet_position">I would like to:</p>
 				<br></br>
 				<div className="component_signupsheet_radios">
-					<p className="component_signupsheet_radio_left">Find Jobs</p><input type="radio" name="jobs" value="employee"></input>
+					<p className="component_signupsheet_radio_left">Find Jobs</p><input type="radio" name="jobs" value="employee" checked></input>
 					<p className="component_signupsheet_radio_right">Post Jobs</p><input type="radio" name="jobs" value="employer"></input>
 				</div>
 				<div className="component_signupsheet_submitcontainer">
-					<Link to="/jobboard">
+					
 					<button className="component_signupsheet_submit" onClick={this.addUser}>Sign Up</button>
-					</Link>
+					
 				</div>
 			</div>,
 			login: "component_signupsheet_loginbutton component_signupsheet_nonselected",
@@ -61,13 +62,11 @@ export default class SignUpSheet extends Component{
 				<Field name="email" onUpdate={this.onUpdate}/>
 				<Field name="password" onUpdate={this.onUpdate}/>
 				<div className="component_signupsheet_submitcontainer">
-					<Link to="/jobboard">
 					<button className="component_signupsheet_submit" onClick={this.verifyLogin}>Sign In</button>
-					</Link>
 				</div>
 			</div>,
 			login: "component_signupsheet_loginbutton component_signupsheet_selected",
-			signup: "component_signupsheet_signupbutton component_signupsheet_nonselected"
+			signup: "component_signupsheet_signupbutton component_signupsheet_nonselected",
 		});
 	}
 
@@ -98,6 +97,12 @@ export default class SignUpSheet extends Component{
 		this.login();
 	}
 
+	notValid = () => {
+		this.setState({
+			valid : 'invalid user information'
+		});
+	}
+
 	login = () => {
 		//in progress
 		var data = {
@@ -110,10 +115,11 @@ export default class SignUpSheet extends Component{
 		var verify = {
 			"async" : true,
 	  		"crossDomain" : true,
-	  		"method" : "GET",
+	  		"method" : "POST",
 	  		"headers": {
     			"Content-Type": "application/json",
-    			"Cache-Control": "no-cache"
+    			"Cache-Control": "no-cache",
+    			"Postman-Token": "6515d076-4afd-4dd4-b9af-2cd11bfc4012"
   			},
   			"url" : 'http://localhost:3000/api/login',						
 	    	"processData" : false,
@@ -121,20 +127,38 @@ export default class SignUpSheet extends Component{
 		}
 
 		$.ajax(verify).done(function (response) {
-			console.log(response);
+			//need to handle this response. Will get key if correct or incorrect if not
+			console.log("response: " + response);
+			if(response !== 'incorrect'){
+				document.cookie="token = abcd1234";
+				window.location.assign("http://localhost:3000/jobboard");
+			}
+			else{
+				alert("Invlaid Login Cridentials");
+				console.log("invalid");
+			}
 		});
 	}
 
 	addUser = () => {
 	    this.addUser2();
-	      
   	}
+
   	addUser2 = () => {
+  		var userT = "nothing";
+  		var radios = document.getElementsByName('jobs');
+  		for(var i=0; i<radios.length; i++){
+  			if(radios[i].checked){
+  				userT = radios[i].value;
+  			}
+  		}
+
   		var data = {
   			"FirstName" : this.state.first, 
   			"LastName" : this.state.last,
   			"Email" : this.state.email,
-  			"Password" : this.state.password
+  			"Password" : this.state.password,
+  			"UserType" : userT
   		};
 
   		console.log(JSON.stringify(data));
@@ -154,6 +178,15 @@ export default class SignUpSheet extends Component{
         }
 
         $.ajax(addUser3).done(function (response) {
+        	document.cookie="token = abcd1234";
+        	document.cookie="user = " + userT;
+        	if(userT === "employer"){
+        		window.location.assign("http://localhost:3000/postjob");
+        	}
+        	else{
+        		window.location.assign("http://localhost:3000/jobboard");
+        	}
+        	console.log(document.cookie);
 			console.log(response);
 		});
   	}

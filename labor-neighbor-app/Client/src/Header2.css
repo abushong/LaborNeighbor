@@ -1,0 +1,34 @@
+.component_header{
+	background-color:white;
+	height: 100px;
+	box-shadow: 0 1px 5px gray;
+	position: relative;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+.component_header a, a:visited{
+	text-decoration: none;
+	color: black;
+}
+.component_header a:hover{
+	color: rgb(163,199,133);
+}
+
+.component_header_img{
+	float: left;
+	height:50px;
+	margin-left: 15px;
+	margin-top: 30px;
+}
+
+.component_header_text_left{
+	display: inline-block;
+	margin: 35px 15px 0 0;
+	font-size: 1.4em;
+}
+
+.component_header_text_right{
+	float:right;
+	margin: 35px 50px 0 0;
+	font-size: 1.4em;
+}
