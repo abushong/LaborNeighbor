@@ -108,8 +108,6 @@ export default class Body extends Component{
 						</li>
 					</ul>
 				</div>
-				
-
 			</div>
 		);
 	}

@@ -112,6 +112,33 @@ export default class SignUpSheet extends Component{
 
 		console.log(JSON.stringify(data));
 
+		var getUserType = {
+			"async" : true,
+	  		"crossDomain" : true,
+	  		"method" : "POST",
+	  		"headers": {
+    			"Content-Type": "application/json",
+    			"Cache-Control": "no-cache",
+    			"Postman-Token": "6515d076-4afd-4dd4-b9af-2cd11bfc4012"
+  			},
+  			"url" : 'http://localhost:3000/api/userType',						
+	    	"processData" : false,
+	    	"data" : JSON.stringify(data)
+		}
+
+		//get type of user from login
+		$.ajax(getUserType).done(function (response) {
+			console.log("login response: " + response[0].UserType);
+			if(response !== 'incorrect'){
+				document.cookie="token = abcd1234";
+				document.cookie="user = " + response[0].UserType;
+			}
+			else{
+				alert("Invlaid Login Cridentials");
+				console.log("invalid");
+			}
+		});
+
 		var verify = {
 			"async" : true,
 	  		"crossDomain" : true,
@@ -125,7 +152,6 @@ export default class SignUpSheet extends Component{
 	    	"processData" : false,
 	    	"data" : JSON.stringify(data)
 		}
-
 		$.ajax(verify).done(function (response) {
 			//need to handle this response. Will get key if correct or incorrect if not
 			console.log("response: " + response);

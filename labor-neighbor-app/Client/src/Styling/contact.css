@@ -1,11 +1,11 @@
 /* Style inputs with type="text", select elements and textareas */
-body{
-    background: url('../Components/about.jpg')
+.component_contact_wrapper{
+    background: url('../Components/about.jpg');
 }
 .component_contact{
     width:50%;
 }
-input[type=text], select, textarea {
+.component_contact input[type=text], select, textarea {
     width: 100%; /* Full width */
     padding: 12px; /* Some padding */  
     border: 1px solid #ccc; /* Gray border */
@@ -16,8 +16,13 @@ input[type=text], select, textarea {
     resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
 }
 
+.component_contact_button{
+    width: 100%;
+    text-align: center;
+}
+
 /* Style the submit button with a specific background color etc */
-input[type=submit] {
+.component_contact input[type=submit] {
     background-color: rgb(163,199,133);
     color: black;
     font-weight: bold;
@@ -26,12 +31,16 @@ input[type=submit] {
     border-radius: 4px;
     cursor: pointer;
     margin-bottom: 2%;
-    margin-left: 2%;
+    background-color: white;
+    border: solid 1px lightgray;
+    
 }
 
 /* When moving the mouse over the submit button, add a darker green color */
-input[type=submit]:hover {
-    background-color: #45a049;
+.component_contact input[type=submit]:hover {
+    background-color: rgb(163,199,133);
+    cursor: pointer;
+    color: white;
 }
 
 /* Add a background color and some padding around the form */
@@ -40,9 +49,13 @@ input[type=submit]:hover {
     padding:15px;
     margin-left:25%;
     margin-top:30px;
-    margin-bottom:50px;
     background: rgb(255,250,240);
     border:3px solid white;
+}
+
+.component_contact_spacer{
+    padding-bottom: 35px;
+    padding-top: 20px
 }
 
 .component_contact p {

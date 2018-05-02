@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Field from "Components/Field.js";
+import MyJobs from "Components/MyJobs.js";
 
 export default class PostJob extends Component{
 
@@ -34,6 +35,9 @@ export default class PostJob extends Component{
 		if(this.state.posted === false){
 			return(
 				<div className="component_postjob_wrapper">
+				<div className="component_postjob_myjobs">
+					<MyJobs />
+				</div>
 				<div className="component_postjob_extra">
 					<div className="component_postjob">
 						<p className="component_postjob_title">Post a Job</p>
@@ -66,7 +70,7 @@ export default class PostJob extends Component{
 							<input className="component_postjob_date_size" type="date" name="Start Date"/>
 						</div>
 						<div className="component_postjob_text">
-							<textarea className="component_postjob_text_size" name="Description" placeholder="Job Description" rows="4" cols="30" maxlength="144">
+							<textarea className="component_postjob_text_size" name="Description" placeholder="Job Description" rows="4" cols="30" maxLength="144">
 							</textarea>
 						</div>
 						<div className="component_postjob_button">
@@ -81,13 +85,18 @@ export default class PostJob extends Component{
 			return(
 				<div className="component_postjob_wrapper">
 					<div className="component_postjob_extra">
-						<div className="component_postjob">
-						<p className="component_postjob_another_title">
-							Thank you for posting a job!
-						</p>
-						<div className="component_postjob_button">
-							<button onClick={() => {this.handlePost()}} className="component_postjob_submit again">Post Another Job</button>
+						<div className="component_postjob_myjobs submitted">
+							<MyJobs />
 						</div>
+						<div className="component_postjob submitted">
+							<div className="component_postjob_submitted">
+								<p className="component_postjob_another_title">
+									Thank you for posting a job!
+								</p>
+								<div className="component_postjob_button">
+									<button onClick={() => {this.handlePost()}} className="component_postjob_submit again">Post Another Job</button>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>

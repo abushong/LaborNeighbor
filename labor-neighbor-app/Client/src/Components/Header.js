@@ -17,7 +17,7 @@ export default class Header extends Component{
 		this.setState({
 			header: cook[1]
 		});
-		console.log("headdd" + this.state.header)
+		console.log("header type: " + this.state.header);
 	}
 
 	renderHeader(){

@@ -7,7 +7,7 @@ export default class JobBoard extends Component{
 
 	constructor(props){
 		super(props);
-		this.renderJobs = this.renderJobs.bind(this);
+		//this.renderJobs = this.renderJobs.bind(this);
 		this.getJobs = this.getJobs.bind(this);
 	}
 
@@ -37,7 +37,7 @@ export default class JobBoard extends Component{
 		console.log("jskdlfj: " + numJobs);
 		var loadJobs = [];
 		for(var i=0; i<numJobs; i++){
-			loadJobs.push(<Job name={jobList[i].Name} title={jobList[i].Title} laborers={jobList[i].NumLaborers} price={jobList[i].Price} distance="dist" desc={jobList[i].Description} />);
+			loadJobs.push(<Job name={jobList[i].Name} title={jobList[i].Title} laborers={jobList[i].NumLaborers} price={jobList[i].Price} distance="dist" desc={jobList[i].Description} key={i}/>);
 		}
 		return loadJobs;
 	}

@@ -141,5 +141,30 @@ app.post("/api/login" , (req,res) => {
 	});
 });
 
+app.post("/api/userType", (req,res) => {
+	var con = mysql.createConnection({
+		host: "localhost",
+		user: "ln",
+		password: "password",
+		database: "LaborNeighbor"
+	});
+
+	var user = req.body;
+	var sql = "SELECT * FROM Users WHERE Email = '" + user.Email + "'";
+
+	con.connect(function(err){
+		console.log("connected");
+
+		//finish this
+		if(err) throw err;
+		con.query(sql, function(err, result,fields){
+			if(err) throw err;
+				console.log(result);
+			res.send(result);
+		});
+
+	});
+});
+
 
 app.listen(port, () => console.log(`Listening on port ${port}`));
