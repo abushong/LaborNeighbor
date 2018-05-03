@@ -121,7 +121,7 @@ export default class SignUpSheet extends Component{
     			"Cache-Control": "no-cache",
     			"Postman-Token": "6515d076-4afd-4dd4-b9af-2cd11bfc4012"
   			},
-  			"url" : 'http://localhost:3000/api/userType',						
+  			"url" : 'http://localhost:5000/api/userType',						
 	    	"processData" : false,
 	    	"data" : JSON.stringify(data)
 		}
@@ -148,7 +148,7 @@ export default class SignUpSheet extends Component{
     			"Cache-Control": "no-cache",
     			"Postman-Token": "6515d076-4afd-4dd4-b9af-2cd11bfc4012"
   			},
-  			"url" : 'http://localhost:3000/api/login',						
+  			"url" : 'http://localhost:5000/api/login',						
 	    	"processData" : false,
 	    	"data" : JSON.stringify(data)
 		}
@@ -198,7 +198,7 @@ export default class SignUpSheet extends Component{
     			"Cache-Control": "no-cache",
     			"Postman-Token": "e2846da5-6c79-4c07-ac5e-ef63f5068612"
   			},
-	        "url" : 'http://localhost:3000/api/user2',						
+	        "url" : 'http://localhost:5000/api/user2',						
 	    	"processData" : false,
 	    	"data" : JSON.stringify(data)
         }
