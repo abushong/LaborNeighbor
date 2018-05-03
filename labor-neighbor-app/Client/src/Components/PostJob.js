@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import Field from "Components/Field.js";
-import MyJobs from "Components/MyJobs.js";
+import Field from "./Field.js";
+import MyJobs from "./MyJobs.js";
 
 export default class PostJob extends Component{
 

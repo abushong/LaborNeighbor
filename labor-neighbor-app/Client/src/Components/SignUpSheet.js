@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import Field from "Components/Field.js";
-import Button from "Components/Button.js";
+import Field from "./Field.js";
+import Button from "./Button.js";
 import $ from 'jquery';
 
 export default class SignUpSheet extends Component{

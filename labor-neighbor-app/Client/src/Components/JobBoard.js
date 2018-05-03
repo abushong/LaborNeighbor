@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import Job from "Components/Job.js";
-import MyJobs from "Components/MyJobs.js";
+import Job from "./Job.js";
+import MyJobs from "./MyJobs.js";
 import $ from 'jquery';
 
 export default class JobBoard extends Component{

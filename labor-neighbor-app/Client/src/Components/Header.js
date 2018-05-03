@@ -8,6 +8,7 @@ export default class Header extends Component{
 		this.state = {
 			header: ''
 		};
+		this.renderHeader = this.renderHeader.bind(this);
 	}
 
 	componentDidMount(){
@@ -54,6 +55,9 @@ export default class Header extends Component{
 					<Link to="/postjob">
 						<p className="component_header_text_right">Post Jobs</p>
 					</Link>
+					<Link to="/jobboard">
+						<p className="component_header_text_right">Job Board</p>
+					</Link>
 				</header>
 			);
 		}
@@ -79,20 +83,9 @@ export default class Header extends Component{
 
 	render(){
 		return(
-			<header className="component_header">
-				<Link to="/">
-					<img className="component_header_img" src={logo} alt="logo" />
-				</Link>
-				<Link to="/signup">
-					<p className="component_header_text_right">Sign In</p>
-				</Link>
-				<Link to="/contact">
-					<p className="component_header_text_right">Contact</p>
-				</Link>
-				<Link to="/about">
-					<p className="component_header_text_right">About</p>
-				</Link>
-			</header>
+			<div>
+			{this.renderHeader()}
+			</div>
 		);
 	}
 }
