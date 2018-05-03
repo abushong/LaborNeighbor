@@ -14,10 +14,12 @@ export default class Header extends Component{
 	componentDidMount(){
 		console.log("headerrr: " + document.cookie);
 		var cook = document.cookie.match(new RegExp("user" + '=([^;]+)'));
-		console.log("cooks: " + cook[1]);
-		this.setState({
-			header: cook[1]
-		});
+		if(cook != null){
+			console.log("cooks: " + cook[1]);
+			this.setState({
+				header: cook[1]
+			});
+		}
 		console.log("header type: " + this.state.header);
 	}
 

@@ -157,7 +157,7 @@ export default class SignUpSheet extends Component{
 			console.log("response: " + response);
 			if(response !== 'incorrect'){
 				document.cookie="token = abcd1234";
-				window.location.assign("http://localhost:3000/jobboard");
+				window.location.assign("http://localhost:5000/jobboard");
 			}
 			else{
 				alert("Invlaid Login Cridentials");
@@ -207,10 +207,10 @@ export default class SignUpSheet extends Component{
         	document.cookie="token = abcd1234";
         	document.cookie="user = " + userT;
         	if(userT === "employer"){
-        		window.location.assign("http://localhost:3000/postjob");
+        		window.location.assign("http://localhost:5000/postjob");
         	}
         	else{
-        		window.location.assign("http://localhost:3000/jobboard");
+        		window.location.assign("http://localhost:5000/jobboard");
         	}
         	console.log(document.cookie);
 			console.log(response);
