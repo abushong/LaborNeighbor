@@ -5,7 +5,7 @@ export default class Footer extends Component{
 	signOut = () =>{
 		document.cookie = "token = ''";
 		document.cookie = "user = ''";
-		window.location.assign("http://localhost:3000");
+		window.location.assign("http://ec2-18-219-101-230.us-east-2.compute.amazonaws.com");
 	}
 
 	render(){
