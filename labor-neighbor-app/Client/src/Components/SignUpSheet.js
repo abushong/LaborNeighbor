@@ -198,7 +198,7 @@ export default class SignUpSheet extends Component{
     			"Cache-Control": "no-cache",
     			"Postman-Token": "e2846da5-6c79-4c07-ac5e-ef63f5068612"
   			},
-	        "url" : 'http://localhost:5000/api/user2',						
+	        "url" : '/api/user2',						
 	    	"processData" : false,
 	    	"data" : JSON.stringify(data)
         }
