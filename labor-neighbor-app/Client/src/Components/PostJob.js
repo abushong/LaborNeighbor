@@ -76,7 +76,7 @@ export default class PostJob extends Component{
 							</textarea>
 						</div>
 						<div className="component_postjob_button">
-							<button onClick={() => {this.handlePost()}} className="component_postjob_submit">Post Job</button>
+							<button onClick={() => {this.postJob()}} className="component_postjob_submit">Post Job</button>
 						</div>
 					</div>
 				</div>
@@ -96,7 +96,7 @@ export default class PostJob extends Component{
 									Thank you for posting a job!
 								</p>
 								<div className="component_postjob_button">
-									<button onClick={() => {this.postJob()}} className="component_postjob_submit again">Post Another Job</button>
+									<button onClick={() => {this.handlePost()}} className="component_postjob_submit again">Post Another Job</button>
 								</div>
 							</div>
 						</div>
@@ -142,12 +142,12 @@ export default class PostJob extends Component{
 	postJob = () =>{
 
 		var numL = 1;
-		var e = document.getElementsByName('Number Of Laborers');
-		numL = e.options[e.selectedIndex].value;
+		//var e = document.getElementsByName('Number Of Laborers');
+		//numL = e.options[e.selectedIndex].value;
 
 		var data = {
   			"Title" : this.state.jobname, 
-  			"NumLaborers" : 2,
+  			"NumLaborers" : numL,
   			"Price" : this.state.wage,
   			"Location" : this.state.password,
   			"Name" : "Mike Williams",
