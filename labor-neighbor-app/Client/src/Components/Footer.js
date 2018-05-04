@@ -18,10 +18,11 @@ export default class Footer extends Component{
 				 	| <a href="mailto:service@laborneighbor.com">service@laborneighbor.com</a>
 				 	| <p className="component_footer_signout" onClick={() => {this.signOut()}}>sign out</p>
 				 	<br></br>
-				 	<FontAwesome className="component_footer_icon" name='fab fa-facebook' />
-					<FontAwesome className="component_footer_icon" name='far fa-star' />
-					<FontAwesome className="component_footer_icon" name='star' />
-					<FontAwesome className="component_footer_icon" name='far fa-star' />
+				 	<br></br>
+				 	<a href="http://www.facebook.com"><FontAwesome className="component_footer_icon" name='fab fa-facebook' /></a>
+					<a href="http://www.instagram.com"><FontAwesome className="component_footer_icon" name='fab fa-instagram' /></a>
+					<a href="http://www.twitter.com"><FontAwesome className="component_footer_icon" name='fab fa-twitter' /></a>
+					<a href="http://www.youtube.com"><FontAwesome className="component_footer_icon" name='fab fa-youtube' /></a>
 				</div>
 			</footer>
 		);

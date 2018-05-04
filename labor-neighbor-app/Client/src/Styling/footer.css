@@ -32,3 +32,12 @@
 	color: white;
 	cursor: pointer;
 }
+
+.component_footer_icon{
+	font-size: 2em;
+	cursor:pointer;
+}
+
+.component_footer_icon:hover{
+	color: white;
+}
