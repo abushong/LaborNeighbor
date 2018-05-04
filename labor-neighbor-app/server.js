@@ -87,11 +87,11 @@ app.post('/api/postjob', (req, res) => {
 		console.log("Connected!");
 		var job = req.body;
 
-		var sql = "INSERT INTO Jobs (Title, NumLaborers, Price, Location, Name, Description) VALUES "
+		var sql = "INSERT INTO Jobs (Title, NumLaborers, Price, City, Name, Description) VALUES "
 		+ "('" + String(job.Title) + "','"
 			+ job.NumLaborers + "','"
 			+ job.Price + "','"
-			+ job.Location + "','"
+			+ job.City + "','"
 			+ job.Name + "','"
 			+ job.Description + "');";
 

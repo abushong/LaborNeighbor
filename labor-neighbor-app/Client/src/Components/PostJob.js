@@ -149,7 +149,7 @@ export default class PostJob extends Component{
   			"Title" : this.state.jobname, 
   			"NumLaborers" : numL,
   			"Price" : this.state.wage,
-  			"Location" : this.state.password,
+  			"City" : this.state.location,
   			"Name" : "Mike Williams",
   			"Description" : this.state.description
   		};
