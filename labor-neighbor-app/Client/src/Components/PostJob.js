@@ -141,7 +141,7 @@ export default class PostJob extends Component{
 
 	postJob = () =>{
 
-		var numL = 3;
+		var numL = 1;
 		//var e = document.getElementsByName('Number Of Laborers');
 		//numL = e.options[e.selectedIndex].value;
 		var wage = document.getElementById("wage").value;
@@ -152,7 +152,7 @@ export default class PostJob extends Component{
   			"NumLaborers" : numL,
   			"Price" : wage,
   			"City" : this.state.location,
-  			"Name" : "Joel Kline",
+  			"Name" : "Jeff Ritchie",
   			"Description" : desc
   		};
 
@@ -174,7 +174,7 @@ export default class PostJob extends Component{
 			console.log(response);
 		});
 
-		/*if(this.state.posted === false){
+		if(this.state.posted === false){
 			this.setState({
 				posted : true
 			});
@@ -183,7 +183,7 @@ export default class PostJob extends Component{
 			this.setState({
 				posted : false
 			});
-		}*/
+		}
 	}
 
 	render(){
