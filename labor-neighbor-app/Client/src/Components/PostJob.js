@@ -148,7 +148,7 @@ export default class PostJob extends Component{
 		var data = {
   			"Title" : this.state.jobname, 
   			"NumLaborers" : numL,
-  			"Price" : (int) this.state.wage,
+  			"Price" : parseInt(this.state.wage),
   			"City" : this.state.location,
   			"Name" : "Mike Williams",
   			"Description" : this.state.description
