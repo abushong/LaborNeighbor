@@ -141,24 +141,13 @@ export default class PostJob extends Component{
 
 	postJob = () =>{
 
-		if(this.state.posted === false){
-			this.setState({
-				posted : true
-			});
-		}
-		else{
-			this.setState({
-				posted : false
-			});
-		}
-
 		var numL = 1;
 		var e = document.getElementsByName('Number Of Laborers');
 		numL = e.options[e.selectedIndex].value;
 
 		var data = {
   			"Title" : this.state.jobname, 
-  			"NumLaborers" : numL,
+  			"NumLaborers" : 2,
   			"Price" : this.state.wage,
   			"Location" : this.state.password,
   			"Name" : "Mike Williams",
@@ -182,6 +171,17 @@ export default class PostJob extends Component{
         $.ajax(addJob).done(function (response) {
 			console.log(response);
 		});
+
+		/*if(this.state.posted === false){
+			this.setState({
+				posted : true
+			});
+		}
+		else{
+			this.setState({
+				posted : false
+			});
+		}*/
 	}
 
 	render(){
