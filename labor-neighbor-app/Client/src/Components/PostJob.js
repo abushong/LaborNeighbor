@@ -64,7 +64,7 @@ export default class PostJob extends Component{
 						</div>
 						<div className="component_postjob_drop">
 							Wage Per Hour<br></br>
-							$<input className="component_postjob_date_size" type="number" placeholder="7.00" min="7" max="30" step=".01" onUpdate={this.onUpdate}/>
+							$<input id="wage" className="component_postjob_date_size" type="number" placeholder="7.00" min="7" max="30" step=".01" onUpdate={this.onUpdate}/>
 						</div>
 						<div className="component_postjob_date">
 							Start Date
@@ -144,11 +144,12 @@ export default class PostJob extends Component{
 		var numL = 1;
 		//var e = document.getElementsByName('Number Of Laborers');
 		//numL = e.options[e.selectedIndex].value;
+		var wage = document.getElementsById("wage").value;
 
 		var data = {
   			"Title" : this.state.jobname, 
   			"NumLaborers" : numL,
-  			"Price" : parseInt(this.state.wage),
+  			"Price" : wage,
   			"City" : this.state.location,
   			"Name" : "Mike Williams",
   			"Description" : this.state.description
