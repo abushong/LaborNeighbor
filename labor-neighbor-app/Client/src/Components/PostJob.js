@@ -11,7 +11,7 @@ export default class PostJob extends Component{
 			jobname: 'jobname filler',
 			numlaborers: 'numlaborers filler',
 			skills: 'skills filler',
-			location: 'location, filler',
+			location: 'location filler',
 			wage: 'wage',
 			description: 'description filler',
 			posted: false
@@ -49,7 +49,7 @@ export default class PostJob extends Component{
 							<Field className="component_postjob_field" name="Skills Required" onUpdate={this.onUpdate}/>
 						</div>
 						<div className="component_postjob_field">
-							<Field className="component_postjob_field" name="Location" onUpdate={this.onUpdate}/>
+							<Field className="component_postjob_field" id="loc" name="Location" onUpdate={this.onUpdate}/>
 						</div>
 						<div className="component_postjob_field">
 							<Field className="component_postjob_field" name="Category" onUpdate={this.onUpdate}/>
@@ -72,7 +72,7 @@ export default class PostJob extends Component{
 							<input className="component_postjob_date_size" type="date" name="Start Date"/>
 						</div>
 						<div className="component_postjob_text">
-							<textarea className="component_postjob_text_size" name="Description" placeholder="Job Description" rows="4" cols="30" maxLength="144">
+							<textarea className="component_postjob_text_size" id="desc" name="Description" placeholder="Job Description" rows="4" cols="30" maxLength="144">
 							</textarea>
 						</div>
 						<div className="component_postjob_button">
@@ -145,14 +145,16 @@ export default class PostJob extends Component{
 		//var e = document.getElementsByName('Number Of Laborers');
 		//numL = e.options[e.selectedIndex].value;
 		var wage = document.getElementById("wage").value;
+		var desc = document.getElementById("desc").value;
+		var loc = document.getElementById("loc").value;
 
 		var data = {
   			"Title" : this.state.jobname, 
   			"NumLaborers" : numL,
   			"Price" : wage,
-  			"City" : this.state.location,
+  			"City" : loc,
   			"Name" : "Judy Bloom",
-  			"Description" : this.state.description
+  			"Description" : desc
   		};
 
   		var addJob = {
