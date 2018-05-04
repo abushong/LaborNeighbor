@@ -144,7 +144,7 @@ export default class PostJob extends Component{
 		var numL = 1;
 		//var e = document.getElementsByName('Number Of Laborers');
 		//numL = e.options[e.selectedIndex].value;
-		var wage = document.getElementsById("wage").value;
+		var wage = document.getElementById("wage").value;
 
 		var data = {
   			"Title" : this.state.jobname, 
