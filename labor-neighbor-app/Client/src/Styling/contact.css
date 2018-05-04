@@ -1,6 +1,7 @@
 /* Style inputs with type="text", select elements and textareas */
 .component_contact_wrapper{
     background: url('../Components/about.jpg');
+    min-height: calc(100vh - 190px);
 }
 .component_contact{
     width:50%;
