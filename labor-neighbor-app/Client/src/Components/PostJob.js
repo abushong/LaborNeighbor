@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Field from "./Field.js";
 import MyJobs from "./MyJobs.js";
+import $ from 'jquery';
 
 export default class PostJob extends Component{
 
