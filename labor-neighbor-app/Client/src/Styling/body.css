@@ -148,9 +148,7 @@ h1{
 
 .component_body_completing ul {
 	display:inline-block;
-	float:left;
-	padding-right:7%;
-	padding-left:14%;
+	width: 32%;
 }
 
 .component_body_completing li {
