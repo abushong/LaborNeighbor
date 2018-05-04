@@ -146,13 +146,12 @@ export default class PostJob extends Component{
 		//numL = e.options[e.selectedIndex].value;
 		var wage = document.getElementById("wage").value;
 		var desc = document.getElementById("desc").value;
-		var loc = document.getElementById("loc").value;
 
 		var data = {
   			"Title" : this.state.jobname, 
   			"NumLaborers" : numL,
   			"Price" : wage,
-  			"City" : loc,
+  			"City" : "Lancaster",
   			"Name" : "Judy Bloom",
   			"Description" : desc
   		};
