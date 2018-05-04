@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+var FontAwesome = require('react-fontawesome');
 
 export default class Footer extends Component{
 	
