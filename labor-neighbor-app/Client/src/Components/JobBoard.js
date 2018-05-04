@@ -37,7 +37,7 @@ export default class JobBoard extends Component{
 		console.log("jskdlfj: " + numJobs);
 		var loadJobs = [];
 		for(var i=0; i<numJobs; i++){
-			loadJobs.push(<Job name={jobList[i].Name} title={jobList[i].Title} laborers={jobList[i].NumLaborers} price={jobList[i].Price} distance="dist" desc={jobList[i].Description} key={i}/>);
+			loadJobs.push(<Job name={jobList[i].Name} title={jobList[i].Title} laborers={jobList[i].NumLaborers} price={jobList[i].Price} distance={jobList[i].City} desc={jobList[i].Description} key={i}/>);
 		}
 		return loadJobs;
 	}
