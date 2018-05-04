@@ -14,14 +14,14 @@ export default class Footer extends Component{
 		return(
 			<footer className="component_footer">
 				<div className="component_footer_text">
-					<p className="component_footer_text">Find Small Jobs. Fast, smarter, easier. </p>
+					<p className="component_footer_text">Find Small Jobs. Fast, smarter, easier. </p> 
 				 	| <a href="mailto:service@laborneighbor.com">service@laborneighbor.com</a>
 				 	| <p className="component_footer_signout" onClick={() => {this.signOut()}}>sign out</p>
 				 	<br></br>
-				 	<a href="http://www.facebook.com"><FontAwesome className="component_footer_icon" name='fab fa-facebook' /></a>
-					<a href="http://www.instagram.com"><FontAwesome className="component_footer_icon" name='fab fa-instagram' /></a>
-					<a href="http://www.twitter.com"><FontAwesome className="component_footer_icon" name='fab fa-twitter' /></a>
-					<a href="http://www.youtube.com"><FontAwesome className="component_footer_icon" name='fab fa-youtube' /></a>
+				 	<a href="http://www.facebook.com"><FontAwesome className="component_footer_icon fa-2x" name='fab fa-facebook' /></a>
+					<a href="http://www.instagram.com"><FontAwesome className="component_footer_icon fa-2x" name='fab fa-instagram' /></a>
+					<a href="http://www.twitter.com"><FontAwesome className="component_footer_icon fa-2x" name='fab fa-twitter' /></a>
+					<a href="http://www.youtube.com"><FontAwesome className="component_footer_icon fa-2x" name='fab fa-youtube' /></a>
 				</div>
 			</footer>
 		);
