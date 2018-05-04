@@ -71,6 +71,43 @@ app.post('/api/user2', (req, res) => {
 	});
 });
 
+app.post('/api/postjob', (req, res) => {
+
+	console.log(req.body);
+
+	var con = mysql.createConnection({
+		host: "localhost",
+		user: "ln",
+		password: "password",
+		database: "LaborNeighbor"
+	});
+
+	con.connect(function(err) {
+		
+		console.log("Connected!");
+		var job = req.body;
+
+		var sql = "INSERT INTO Jobs (Title, NumLaborers, Price, Location, Name, Description) VALUES "
+		+ "('" + String(job.Title) + "','"
+			+ job.NumLaborers + "','"
+			+ job.Price + "','"
+			+ job.Location + "','"
+			+ job.Name + "','"
+			+ job.Description + "');";
+
+		console.log(sql);
+		
+		con.query(sql, function(err, result){
+			if(err){
+				console.log(err);
+				return;
+			}
+			console.log("1 record inserted");
+			res.send(result);
+		});
+	});
+});
+
 app.get("/api/users", (req, res) => {
 
 	var con = mysql.createConnection({

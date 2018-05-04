@@ -58,11 +58,12 @@ export default class PostJob extends Component{
 							<select className="component_postjob_drop_size" name="Number Of Laborers">
 								<option value="1">1</option>
 								<option value="2">2</option>
+								<option value="3">3</option>
 							</select>
 						</div>
 						<div className="component_postjob_drop">
 							Wage Per Hour<br></br>
-							$<input className="component_postjob_date_size" type="number" placeholder="7.00" min="7" max="30" step=".01"/>
+							$<input className="component_postjob_date_size" type="number" placeholder="7.00" min="7" max="30" step=".01" onUpdate={this.onUpdate}/>
 						</div>
 						<div className="component_postjob_date">
 							Start Date
@@ -94,7 +95,7 @@ export default class PostJob extends Component{
 									Thank you for posting a job!
 								</p>
 								<div className="component_postjob_button">
-									<button onClick={() => {this.handlePost()}} className="component_postjob_submit again">Post Another Job</button>
+									<button onClick={() => {this.postJob()}} className="component_postjob_submit again">Post Another Job</button>
 								</div>
 							</div>
 						</div>
@@ -136,6 +137,51 @@ export default class PostJob extends Component{
 			})
 		}
 	};
+
+	postJob = () =>{
+
+		if(this.state.posted === false){
+			this.setState({
+				posted : true
+			});
+		}
+		else{
+			this.setState({
+				posted : false
+			});
+		}
+
+		var numL = 1;
+		var e = document.getElementsByName('Number Of Laborers');
+		numL = e.options[e.selectedIndex].value;
+
+		var data = {
+  			"Title" : this.state.jobname, 
+  			"NumLaborers" : numL,
+  			"Price" : this.state.wage,
+  			"Location" : this.state.password,
+  			"Name" : "Mike Williams",
+  			"Description" : this.state.description
+  		};
+
+  		var addJob = {
+	  		"async" : true,
+	  		"crossDomain" : true,
+	  		"method" : "POST",
+	  		"headers": {
+    			"Content-Type": "application/json",
+    			"Cache-Control": "no-cache",
+    			"Postman-Token": "e2846da5-6c79-4c07-ac5e-ef63f5068612"
+  			},
+	        "url" : '/api/postjob',						
+	    	"processData" : false,
+	    	"data" : JSON.stringify(data)
+        }
+
+        $.ajax(addJob).done(function (response) {
+			console.log(response);
+		});
+	}
 
 	render(){
 		return(

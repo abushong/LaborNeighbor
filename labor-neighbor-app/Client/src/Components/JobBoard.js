@@ -18,7 +18,7 @@ export default class JobBoard extends Component{
 		var jobs = {
 		  "async": false,
 		  "crossDomain": true,
-		  "url": "http://localhost:5000/api/jobs",
+		  "url": "/api/jobs",
 		  "method": "GET",
 		  "headers": {
 		    "Cache-Control": "no-cache",
