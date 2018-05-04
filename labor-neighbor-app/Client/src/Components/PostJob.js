@@ -141,7 +141,7 @@ export default class PostJob extends Component{
 
 	postJob = () =>{
 
-		var numL = 1;
+		var numL = 3;
 		//var e = document.getElementsByName('Number Of Laborers');
 		//numL = e.options[e.selectedIndex].value;
 		var wage = document.getElementById("wage").value;
@@ -152,7 +152,7 @@ export default class PostJob extends Component{
   			"NumLaborers" : numL,
   			"Price" : wage,
   			"City" : this.state.location,
-  			"Name" : "John Cena",
+  			"Name" : "Joel Kline",
   			"Description" : desc
   		};
 
