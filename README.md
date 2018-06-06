@@ -1,5 +1,5 @@
 # LaborNeighbor
-Capstone React Projec for Labor Neighbor
+Capstone React Project for Labor Neighbor
 
 ## Requirements for use
 Must have nodejs installed in order to run the application. This can be downloaded at the [node site](https://nodejs.org/en/). Also need to include font awesome from npm. To do this, navigate to project directory and enter: "npm install --save font-awesome"
