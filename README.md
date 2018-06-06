@@ -5,7 +5,7 @@ Capstone React Projec for Labor Neighbor
 Must have nodejs installed in order to run the application. This can be downloaded at the [node site](https://nodejs.org/en/). Also need to include font awesome from npm. To do this, navigate to project directory and enter: "npm install --save font-awesome"
 
 ## Running the applictation on your machine
-The first thing ou will need to do is clone the repo. To do this enter the terminal, cd to the directory you would like to store the project and perform a git clone. Once you have cloned the project you can start it. To do that you must navigate inside the labor-neighbor-app folder. You should see node_modules, public, another README that contains information on Create React App, src, and some json files. You can then enter nppm start into the terminal which will compile the project and run it in your browser.
+The first thing you will need to do is clone the repo. To do this enter the terminal, cd to the directory you would like to store the project and perform a git clone. Once you have cloned the project you can start it. To do that you must navigate inside the labor-neighbor-app folder. You should see node_modules, public, another README that contains information on Create React App, src, and some json files. You can then enter nppm start into the terminal which will compile the project and run it in your browser.
 
 ## Working in the project
 When you begin to work you will want to make sure you have the most recent version of the project by performing a git pull in the project directory. You can do this by navigating to the project folder (the same one you went to in order to start the project) and enter git pull in the terminal.
